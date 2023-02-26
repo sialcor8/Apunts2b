@@ -5,4 +5,4 @@
 Llegir amplia  el  nostre vocabulari per  a poder expressar-nos amb més claredat i fluïdesa.
 
 
-![Lectura](/imagenes/llibre.jpg)
+![Llibres](/docs/imagenes/llibre.jpg)
