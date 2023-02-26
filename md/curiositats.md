@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>Les matemàtiques mouen el món</title>
+
+<link rel="stylesheet" href="curiositats.css">
+</head>
+<body>
+    <style>
+            *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+            }
+
+            body{
+                color: bisque;
+            font-family: 'calibri';
+            }
+
+            header{
+                background: url(imagenes/escasxip.jpg);
+                height: 550px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section{
+                min-width: 1200px;
+                margin: auto;
+                padding: 30px 0;
+            }
+            h1{
+                font-size: 50px;
+                text-align: center;
+                font-weight: bold;
+                color: rgb(56, 166, 129);
+                margin: 1em 0;
+            }
+            section h2{
+                font-size: 44px; 
+                text-align: left;
+                color: orange;
+            }
+           
+    </style>
+
+    <header>
+    <h1>
+    Benvingut al racó matemovie
+    </h1>
+    <section>
+    <h2>
+    Les matemàtiques mouen el món
+    </h2>
+    <div class="content">
+    </div>
+    <div style="color: rgb(224, 42, 42);    
+    text-decoration: safari 1;
+    background: #a5bb8d;
+    padding: 3px 20px;
+    border-radius: 30px;
+    font-size: 25px;
+    text-align: match-parent;
+    margin: 25px;"></div>
+        <a href="https://www.cienciaoberta.cat/monty">Entrar a tafanejar</a>
+        <a href="https://www.educaciontrespuntocero.com/recursos/peliculas-basadas-matematicas">Entrar a movies</a>  
+    </div>
+    </section>
+    </header>
+</body>
+</html>

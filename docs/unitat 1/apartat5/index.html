@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Probabilitat condicionada - Apunts_Unitat</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+        <link href="../../css/second_extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Probabilitat condicionada";
+        var mkdocs_page_input_path = "unitat 1\\apartat5.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Apunts_Unitat
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Unitat 1</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../apartat1/">Successos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../apartat2/">Àlgebra de Boole</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../apartat3/">Espai probabilístic</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../apartat4/">Càlcul de probabilitats</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Probabilitat condicionada</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#activitats-de-probabilitat-condicionada">ACTIVITATS DE PROBABILITAT CONDICIONADA</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../apartat6/">Teoremes</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../curiositats/">Curiositats</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../webs/">Altres webs d'interés</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../llibres/">Llibres de consulta</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../movies/">Pel·lícules i documentals realacionats amb la probabilitat</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../projecteprob/">Web del projecte</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../recursosdid%C3%A0ctics/">Altres recursos didàctics</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../llic%C3%A8ncia/">Llicència</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Apunts_Unitat</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Unitat 1 &raquo;</li>
+      <li>Probabilitat condicionada</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="probabilitat-condicionadasuccessos-independents-regla-del-producte"><strong>Probabilitat condicionada.Successos independents. Regla del producte.</strong></h1>
+<p>Amb el concepte de probabilitat condicionada obtenim noves formes de calcular probabilitats de successos. En el capítol anterior vam obtenir propietats que permeten calcular la probabilitat d'un succés com a suma de probabilitats de successos més simples; en aquest capítol ho farem com a producte de probabilitats de uccessos més simples.<br />
+Problemes que amb la regla de Laplace solucionàvem amb esforç podran ser resolts per multiplicació de probabilitats de successos senzills però, a més, resoldrem problemes que amb l’esmentada regla no podíem, com són els associats a espais mostrals no finits.</p>
+<p><strong>Exemple 1</strong>.Llancem tres vegades una moneda anotant els resultats obtinguts en cada llançament. Calculem la probabilitat d’obtenir cara en el tercer llançament en els següents casos:<br />
+a)Sense més informació.<br />
+b)Si sabem que hem obtingut un total de dues cares en els tres llançaments.<br />
+L’espai mostral $\Omega$  consta de 8 resultats, les variacions amb repetició de 2 elements d’ordre 3:$\Omega$={CCC, CCK, CKC, KCC, CKK, KCK, KKC, KKK}.<br />
+a)Definim el succés A: <strong>cara en el tercer llançament</strong>.Hi ha 4 resultats favorables a A, aquells que tenen una C en tercer lloc: A ={CCC, CKC, KCC, KKC}<br />
+$\to$ P(A) = $\frac{favorables}{possibles}$ = $\frac{4}{8}$ = $\frac{1}{2}$<br />
+b) Definim el succés B: “Dues cares en els tres llançaments”.<br />
+Si sabem que B s’ha verificat, l’espai mostral queda reduït als 3 resultats que pertanyen a B, ja que en cap cas podria donar-se altra possibilitat:$\Omega$$^<em>$= B= { CCK, CKC, KCC }.Entre ells, els dos últims són favorables a A. Així, la probabilitat d'A, en l’espai reduït $\Omega$$^</em>$, és: <strong>P$^*$(A)=$\frac{favorables}{possibles}$</strong>=$\frac{2}{3}$.<br />
+La probabilitat <strong>P$^*$(A)</strong>, calculada reduint l'espai mostral $\Omega$ a $\Omega$$^<em>$ = B, rep el nom de probabilitat d'A condicionada a B, que expressem per P(A/B), i representa la proporció, sobre el conjunt de resultats de B, dels resultats de A B. Per tant:<br />
+P</em>(A) = P(A/B) =$\frac{nbre\ de\ resultats\ d'A\cap B}{nbre\ de\ resutats\  de\  B}$.  </p>
+<p>Però obtenim el mateix resultat si dividim entre si les probabilitats de A B i de B, calculades amb els 8  resultats de $\Omega$<br />
+P(A/B)=$\frac{P(A\cap B)}{P(B)}$=$\frac{\frac{2}{8}}{\frac{3}{8}}$=$\frac{2}{3}$, ja que B = {CCK, CKC, KCC} i A$\cap$ B = {CKC, KCC} i, per tant, P(B) =$\frac{3}{8}$ i P(A$\cap$ B)=$\frac{2}{8}$.</p>
+<p><strong>Concepte de probabilitat condicionada.</strong><br />
+|Considerem l'espai de successos S d'un experiment aleatori i P:S$\to$R una funció de probabilitat.Agafem un succés fix B$\in$S, amb P(B)&gt;0, que anomenarem succés condicionant.Donat un succés A$\in$S, anomenem probabilitat de A condicionada a B, que representem per P(A/B), a l’expressió: P(A/B)=$\frac{P(A\cap B)}{P(B)}$|.</p>
+<p><strong>Exemple 2.</strong>Una persona extrau cartes d'una baralla espanyola. Si sabem que en dues extraccions va obtenir 2 sotes, calcula la probabilitat que:<br />
+a) Siguen la d'ors i la de copes.<br />
+b) En una tercera extracció obtinga una altra sota.<br />
+Calculem probabilitats condicionades al succés B: “en 2 extraccions han eixit 2 sotes”.<br />
+c) Anomenem A: “en dues extraccions han eixit la sota d'ors i la de copes”.  </p>
+<p>Volem la probabilitat de A condicionada a B, que <strong>podem obtenir de dues formes distintes</strong>:<br />
+- Amb la fórmula de la probabilitat condicionada, calculant les probabilitats de A$\cap$B i de B en l'espai mostral format per totes les parelles amb 2 cartes de les 40 existents: 
+<strong>P(B)=$\frac{favorablesB}{possibles}$</strong>=$\frac{12}{1560}$=$\frac{6}{780}$<br />
+P(A$\cap$B) =$\frac{nbre\ de\ resultats\ d'A\cap B}{casos \  possibles }$=$\frac{2}{1560}$=$\frac{1}{780}$<br />
+P(A/B) =$\frac{P(A\cap B)}{P(B)}$ =$\frac{\frac{1}{780}}{\frac{6}{780}}$=$\frac{1}{6}$.<br />
+- Reduint l'espai mostral: Si sabem que en 2 extraccions es van obtenir 2 sotes, aleshores els únics casos possibles són les 6 possibles parelles de sotes: $\Omega$$^<em>$={(SO, SC), (SO, SE), (SO, SB), (SC, SE), (SC, SB), (SE, SB)} dels quals només un és favorable al succés A: la parella (SO, SC), aleshores: P(A/B)=P$^</em>$(A)=$\frac{1}{6}$<br />
+d)La forma recomanable de calcular la probabilitat de S: “obtenir una sota en la tercera extracció” condicionada al succés B: “en les dues primeres extraccions hem obtingut 2 sotes” és reduint l'espai mostral a 38 cartes, de les quals només hi ha 2 sotes (les que no han sigut tretes encara).<br />
+Casos possibles:38(les cartes que queden); casos favorables:2(les sotes que queden)$\to$ P(S/B)=$\frac{2}{38}$.  </p>
+<p><img alt="" src="../imatges/sala.jpg" /></p>
+<h2 id="activitats-de-probabilitat-condicionada"><strong>ACTIVITATS DE PROBABILITAT CONDICIONADA</strong></h2>
+<p>1.Una persona extrau 2 cartes d'una baralla espanyola i informa que almenys té un as. Quina és la probabilitat que tinga dos asos?</p>
+<p>2.Una persona llança 3 vegades una moneda. Si sabem que la persona va obtenir exactament una cara en els 3 llançaments, calcula la probabilitat que aqueixa cara l'obtinguera en el primer llançament:</p>
+<p>a) Amb l'espai mostral de l'experiment aleatori, utilitzant la definició de probabilitat condicionada.
+b) Amb l'espai mostral reduït als casos en què s'obté exactament una cara.
+c) Repeteix els apartats anteriors, si el que sabem és que la persona va obtenir alguna cara.</p>
+<p>3.El 70% dels estudiants d'un col·legi va aprovar una assignatura A, el 75% va aprovar una altra assignatura B, però només un 60% va aprovar les dues assignatures. Contesta a les següents qüestions:</p>
+<p>a) Si una persona va aprovar l'assignatura A, probabilitat que també aprovara la B.
+b) Si una persona va aprovar l'assignatura A, probabilitat que no aprovara la B.
+c) Si una persona no va aprovar l'assignatura A, probabilitat que aprovara la B.
+d) Si una persona va aprovar alguna de les dues assignatures, probabilitat d'haver aprovat la A.</p>
+<p>4.Si al elegir una carta d'una baralla espanyola, obtenim una figura, quina és la probabilitat (que òbviament és condicionada) que siga una carta de copes? I que siga una sota? I que siga una carta de copes o una sota? I que siga la sota de copes?</p>
+<p>5.Elegim una carta d'una baralla espanyola, que resulta ser un as. Quina és la probabilitat d'elegir una altra i que siga un altre as? I que no ho siga?</p>
+<p>6.Al elegir 5 cartes d'una baralla espanyola, obtenim 3 asos. Quina és la probabilitat que al elegir una carta més, aquesta siga l'as que queda?</p>
+<p>7.Una urna té 5 boles blanques i 3 boles negres. Extraiem 2 boles, que resulten ser de colors distints. Calcula la probabilitat d'extraure altres 2 boles del mateix color.</p>
+<h1 id="independencia-estadistica"><strong>Independència estadística</strong></h1>
+<p>En els exemples anteriors hem vist que la probabilitat d'un succés A pot canviar al introduir la informació que proporciona la verificació d'un altre succés B, i es calcula amb la probabilitat condicionada.
+Si açò ocorre és que B influeix d'alguna forma en A. Esta situació origina un concepte molt important que és el d'independència estadística.</p>
+<p>|    Diem que B afavoreix a A si P(A/B)&gt;P(A). Diem que B desafavoreix |a A si P(A/B)&lt;P(A).                                                 |
+|En els dos casos direm que A i B són dependents.En canvi, diem que |dos successos A i B són independents si les seues probabilitats |condicionades són iguals a les seues pròpies probabilitats: A i B són |independents$\iff$ P(A/B) = P(A) i P(B/A) = P(B) |</p>
+<p><em>Caracterització d'independència per a dos successos</em>:</p>
+<blockquote>
+<p><strong><em>(Regla del producte per a successos independents)</em></strong>
+<strong>A i B són independents si i nomes si P(A$\cap$B))=P(A)·P(B)</strong>
+<em>Independència estadística</em> <strong>per a més de dos successos</strong>:
+<strong>Els successos A$_1$, A$_2$, ..., A$_n$ són independents</strong> si i només si per a qualsevol subconjunt dels anteriors successos la probabilitat de la intersecció és el producte de probabilitats. L'anterior definició significa, per a 3 successos, el següent:
+Els successos A, B i C són independents si i només si:</p>
+<ol>
+<li>P(A$\cap$B)=P(A)·P(B), P(A$\cap$C)=P(A)·P(C), P(B$\cap$C)=P(B)·P(C).</li>
+<li>P(A$\cap$B$\cap$C) = P(A)·P(B)·P(C).
+     En el cas en què <strong>només es verifica (1), diem que els successos són independents 2 a 2</strong>.</li>
+</ol>
+</blockquote>
+<p>De la caracterització d'independència deduïm que si disposem d'un conjunt de successos independents, la probabilitat de la intersecció de qualsevol nombre d'ells és igual al producte de les probabilitats
+respectives.Si els successos A$_1$, A$_2$, ..., A$_n$ són independents, aleshores:</p>
+<blockquote>
+<p>P(A$_1$$\cap$ A$_2$ ··· A$_n$) = P(A$_1$) · P(A$_2$) ··· P(A$_n$)</p>
+</blockquote>
+<p><img alt="Apostes" src="/unitat%201/imatges/apostes.jpg" /></p>
+<h2 id="teorema-de-la-multiplicitat"><strong>Teorema de la multiplicitat</strong></h2>
+<p><strong><em>(Regla del producte per a successos dependents)</em></strong></p>
+<blockquote>
+<p><strong>A i B són independents si i només si P(A$\cap$ B)=P(A/B)·P(B)</strong>
+<strong>Per a dos successos</strong>: si A$_1$ i A$_2$ són dos successos qualssevol, amb P(A$_1$) &gt; 0, aleshores: P(A$_1$ $\cap$A $_2$) = P(A$_1$)·P(A$_2$/A$_1$)
+<strong>Per a tres successos</strong>: si A$_1$, A$_2$ i A$_3$ són dos successos qualssevol, amb P(A$_1$$\cap$A$_2$)&gt; 0: P(A$_1$$\cap$ A$_2$$\cap$ A$_3$) = P(A$_1$)·P(A$_2$/A$_1$)·P(A$_3$/A$_1$$\cap$A$_2$)
+<strong>Per a n successos</strong>: si A$_1$, A$_2$,..., A$_n$ són successos qualssevol, amb P(A$_1$$\cap$ A$_2$$\cap$ · · ·$\cap$ A$_n-_1$ )&gt; 0: P(A$_1$$\cap$ A$_2$ ··· A$_n$)= P(A$_1$) ·P(A$_2$/A$_1$)···P(A$_n$/A$_1$ A$_2$$\cap$···$\cap$ A$_n-_1$)
+</p>
+</blockquote>
+<p><strong>Exemple 1</strong>.Tenim tres urnes U$_1$, U$_2$ i U$_3$ amb les següents composicions: U1 té 6 boles blaves i 4 roges, U$_2$ té 5 blaves i 5 roges, i U$_3$ té 4 blaves i 3 roges. Traiem una bola de cada urna i calculem les probabilitats de:a) A: “les 3 boles tretes són blaves”.b) B: “les 2 primeres boles tretes són roges, i la tercera és blava”.  p
+Definim els següents successos.A$_i$ :“obtenim una bola blava de l'urna U$_i$”.R$_i$: “obtenim una bola roja de l'urna U$i$”, per a i =1,2,3.L'extracció d'una bola de cadascuna de les 3 urnes és un experiment aleatori que es pot descompondre en 3
+dels experiments més simples, que són cadascuna de les extraccions.
+Les probabilitats d'obtenir una bola blava o una roja en cada extracció són molt fàcils de calcular:  </p>
+<p><img alt="Urnes" src="../imatges/Figura%2011.%20Proves%20urnes.png" /><br />
+<strong>Figura 12: Urnes</strong>  </p>
+<p>a) El succés A es pot expressar: A= A$_1$$\cap$ A$_2$$\cap$A$_3$
+Com que no hi ha cap relació entre els resultats que obtenim en les 3 proves, els successos A$_1$, A$_2$ i A$_3$ són independents, i per tant: P(A)=P(A$_1$$\cap$ A$_2$$\cap$A$_3$)=P($A_1$)·P($A_2$)·P($A_3$)=$\frac{6}{10}$·$\frac{5}{10}$·$\frac{4}{7}$</p>
+<p>b) De la mateixa manera, B s'expressa com: B =R$_1$$\cap$ R$_2$$\cap$A$_3$
+Els successos de l'anterior intersecció són també independents, per ser de proves no relacionades: P(B)=(R$_1$$\cap$ R$_2$$\cap$A$_3$)=P($R_1$)·P($R_2$)·P($A_3$)=$\frac{4}{10}$·$\frac{5}{10}$·$\frac{3}{7}$</p>
+<div class="admonition warning">
+<p class="admonition-title">Compte!</p>
+<p>Aneu amb compte al realitzar les activitats.
+Dibuixeu el diagrame en arbre per visualitzar amb claredat el què vos demana en cada cas o en cada apartat.</p>
+</div>
+<p><img alt="" src="../imatges/piques.jpg" /></p>
+<h3 id="activitats-de-probabilitat-dexperments-compostos"><strong>ACTIVITATS DE PROBABILITAT D'EXPERMENTS COMPOSTOS</strong></h3>
+<ol>
+<li>
+<p>Tenim una caixa amb 3 boles negres i 5 blanques, i una altra caixa amb 4 boles negres i 6 blanques. Agafem una bola de cada caixa. Calcula les següents probabilitats:
+   a) Que les dues boles siguen blanques. b) Que les dues boles siguen negres.</p>
+</li>
+<li>
+<p>Si les boles de les 2 caixes de l'activitat 1 les reunim en una caixa única, i traiem 2 boles, calcula:
+   a) La probabilitat d'obtenir 2 boles blanques. b) La d'obtenir 2 boles negres.</p>
+</li>
+<li>
+<p>Considerem el següent experiment: extraiem boles una a una sense reemplaçament d'una urna que conté 6 boles blaves i 4 roges. Calculem les següents probabilitats:
+   a) D'obtenir, amb tres extraccions, i en aquest ordre, una bola blava, una altra roja i una altra blava.
+   b) D'obtenir, amb quatre extraccions, i en aquest ordre, bola blava, roja, blava i roja.</p>
+</li>
+<li>
+<p>Calcula les probabilitats dels successos de l'exemple anterior en el cas en què les extraccions són amb reemplaçament.</p>
+</li>
+<li>
+<p>Extraiem una a una, i sense reemplaçament, totes les boles que hi ha en una caixa que conté 5 boles blanques i 5 boles negres. Calcula la probabilitat que, en les 10 extraccions, no repetim color en dues extraccions
+   successives.</p>
+</li>
+<li>
+<p>Un examen consta de 3 assignatures que contenen 10, 8 i 7 temes respectivament. Un estudiant es prepara 4 temes de cada assignatura. L’exercici consisteix a triar a l’atzar un tema de cada assignatura i respondre correctament. Calcula les probabilitats de:
+   a) Aprovar les 3 assignatures.  b) No aprovar cap assignatura.
+   c) Aprovar alguna assignatura. d) Aprovar una de les 3 assignatures.</p>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../apartat4/" class="btn btn-neutral float-left" title="Càlcul de probabilitats"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../apartat6/" class="btn btn-neutral float-right" title="Teoremes">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../apartat4/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../apartat6/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

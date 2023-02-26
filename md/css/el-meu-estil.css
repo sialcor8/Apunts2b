@@ -1,0 +1,14 @@
+body {
+    /*Canviem les propietats del cos: la lletra, el color de fons i els
+    ↪ marges*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    ↪ 'Lucida Sans', Arial, sans-serif;
+    background-color: #eeeeee;
+    margin: 100px;
+    }
+    h1,
+    h2 {
+    /*Canviem el color d eles capçaleres de 1r o 2n nivell*/
+    color: #cc0000;
+    }
+    

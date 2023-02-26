@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="ca">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="ca">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="ca">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="ca">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+			
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.cienciaoberta.cat/xmlrpc.php" />
+
+		<!--[if lt IE 9]>
+	<script src="https://www.cienciaoberta.cat/wp-content/themes/Extra/scripts/ext/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><style id="et-builder-googlefonts-cached-inline">/* Original: https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPFcZTIAOhVxoMyOr9n_E7fdMbewI1Db5yZ.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPFcZTIAOhVxoMyOr9n_E7fdMbepI5Db5yZ.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPAcZTIAOhVxoMyOr9n_E7fdMbWAaxT.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPFcZTIAOhVxoMyOr9n_E7fdMbe0IhDb5yZ.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPFcZTIAOhVxoMyOr9n_E7fdMbetIlDb5yZ.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffAzHGIVzZg.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGIVzZg.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPecZTIAOhVxoMyOr9n_E7fdM3mCA.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGIVzZg.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffHjDGIVzZg.ttf) format('truetype');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffEDBGIVzZg.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPFcZTIAOhVxoMyOr9n_E7fdMbewI1Db5ya.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPFcZTIAOhVxoMyOr9n_E7fdMbepI5Db5ya.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPAcZTIAOhVxoMyOr9n_E7fdMbWAaxQ.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPFcZTIAOhVxoMyOr9n_E7fdMbe0IhDb5ya.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPFcZTIAOhVxoMyOr9n_E7fdMbetIlDb5ya.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffAzHGIVzZQ.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGIVzZQ.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPecZTIAOhVxoMyOr9n_E7fdM3mCw.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGIVzZQ.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffHjDGIVzZQ.woff) format('woff');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffEDBGIVzZQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPFcZTIAOhVxoMyOr9n_E7fdMbewI1Db5yc.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPFcZTIAOhVxoMyOr9n_E7fdMbepI5Db5yc.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPAcZTIAOhVxoMyOr9n_E7fdMbWAaxW.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPFcZTIAOhVxoMyOr9n_E7fdMbe0IhDb5yc.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: italic;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPFcZTIAOhVxoMyOr9n_E7fdMbetIlDb5yc.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 200;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffAzHGIVzYw.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 300;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGIVzYw.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 400;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPecZTIAOhVxoMyOr9n_E7fdM3mDQ.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 600;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGIVzYw.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 700;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffHjDGIVzYw.woff2) format('woff2');}@font-face {font-family: 'Titillium Web';font-style: normal;font-weight: 900;font-display: swap;src: url(https://fonts.gstatic.com/s/titilliumweb/v15/NaPDcZTIAOhVxoMyOr9n_E7ffEDBGIVzYw.woff2) format('woff2');}</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<script type="text/javascript">
+			let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script>
+	<!-- This site is optimized with the Yoast SEO plugin v20.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>El problema de Monty Hall - La probabilitat rere la porta - Ciència Oberta</title>
+	<meta name="description" content="El problema del Monty Hall es va fer molt famós perquè la majoria de gent insistia en la solució incorrecta. Aconseguirem guanyar-lo?" />
+	<link rel="canonical" href="https://www.cienciaoberta.cat/monty/" />
+	<meta property="og:locale" content="ca_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="El problema de Monty Hall - La probabilitat rere la porta - Ciència Oberta" />
+	<meta property="og:description" content="El problema del Monty Hall es va fer molt famós perquè la majoria de gent insistia en la solució incorrecta. Aconseguirem guanyar-lo?" />
+	<meta property="og:url" content="https://www.cienciaoberta.cat/monty/" />
+	<meta property="og:site_name" content="Ciència Oberta" />
+	<meta property="article:published_time" content="2021-06-20T00:00:00+00:00" />
+	<meta property="article:modified_time" content="2023-02-15T19:10:17+00:00" />
+	<meta property="og:image" content="https://www.cienciaoberta.cat/wp-content/uploads/2021/06/Portada-948x640-1.jpg" />
+	<meta property="og:image:width" content="948" />
+	<meta property="og:image:height" content="640" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Quim Frigola Casals" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@cienciaoberta" />
+	<meta name="twitter:site" content="@cienciaoberta" />
+	<meta name="twitter:label1" content="Escrit per" />
+	<meta name="twitter:data1" content="Quim Frigola Casals" />
+	<meta name="twitter:label2" content="Temps estimat de lectura" />
+	<meta name="twitter:data2" content="6 minuts" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.cienciaoberta.cat/monty/#article","isPartOf":{"@id":"https://www.cienciaoberta.cat/monty/"},"author":{"name":"Quim Frigola Casals","@id":"https://www.cienciaoberta.cat/#/schema/person/4028e8424b2a30a78a481536af76290e"},"headline":"El problema de Monty Hall","datePublished":"2021-06-20T00:00:00+00:00","dateModified":"2023-02-15T19:10:17+00:00","mainEntityOfPage":{"@id":"https://www.cienciaoberta.cat/monty/"},"wordCount":1189,"commentCount":0,"publisher":{"@id":"https://www.cienciaoberta.cat/#organization"},"image":{"@id":"https://www.cienciaoberta.cat/monty/#primaryimage"},"thumbnailUrl":"https://www.cienciaoberta.cat/wp-content/uploads/2021/06/Portada-948x640-1.jpg","keywords":["concurs","cotxe","Marilyn vos Savant","Monty Hall","portes","presentador","probabilitat"],"articleSection":["Física i matemàtiques"],"inLanguage":"ca","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.cienciaoberta.cat/monty/#respond"]}]},{"@type":"WebPage","@id":"https://www.cienciaoberta.cat/monty/","url":"https://www.cienciaoberta.cat/monty/","name":"El problema de Monty Hall - La probabilitat rere la porta - Ciència Oberta","isPartOf":{"@id":"https://www.cienciaoberta.cat/#website"},"primaryImageOfPage":{"@id":"https://www.cienciaoberta.cat/monty/#primaryimage"},"image":{"@id":"https://www.cienciaoberta.cat/monty/#primaryimage"},"thumbnailUrl":"https://www.cienciaoberta.cat/wp-content/uploads/2021/06/Portada-948x640-1.jpg","datePublished":"2021-06-20T00:00:00+00:00","dateModified":"2023-02-15T19:10:17+00:00","description":"El problema del Monty Hall es va fer molt famós perquè la majoria de gent insistia en la solució incorrecta. Aconseguirem guanyar-lo?","breadcrumb":{"@id":"https://www.cienciaoberta.cat/monty/#breadcrumb"},"inLanguage":"ca","potentialAction":[{"@type":"ReadAction","target":["https://www.cienciaoberta.cat/monty/"]}]},{"@type":"ImageObject","inLanguage":"ca","@id":"https://www.cienciaoberta.cat/monty/#primaryimage","url":"https://www.cienciaoberta.cat/wp-content/uploads/2021/06/Portada-948x640-1.jpg","contentUrl":"https://www.cienciaoberta.cat/wp-content/uploads/2021/06/Portada-948x640-1.jpg","width":948,"height":640},{"@type":"BreadcrumbList","@id":"https://www.cienciaoberta.cat/monty/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Novetats","item":"https://www.cienciaoberta.cat/"},{"@type":"ListItem","position":2,"name":"Reportatges","item":"https://www.cienciaoberta.cat/reportatges/"},{"@type":"ListItem","position":3,"name":"Física i matemàtiques","item":"https://www.cienciaoberta.cat/reportatges/fisica-mates/"},{"@type":"ListItem","position":4,"name":"El problema de Monty Hall"}]},{"@type":"WebSite","@id":"https://www.cienciaoberta.cat/#website","url":"https://www.cienciaoberta.cat/","name":"Ciència Oberta","description":"Divulgació científica en català","publisher":{"@id":"https://www.cienciaoberta.cat/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.cienciaoberta.cat/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"ca"},{"@type":"Organization","@id":"https://www.cienciaoberta.cat/#organization","name":"Ciència Oberta","url":"https://www.cienciaoberta.cat/","logo":{"@type":"ImageObject","inLanguage":"ca","@id":"https://www.cienciaoberta.cat/#/schema/logo/image/","url":"https://www.cienciaoberta.cat/wp-content/uploads/2020/03/CO_disseny_black.jpg","contentUrl":"https://www.cienciaoberta.cat/wp-content/uploads/2020/03/CO_disseny_black.jpg","width":500,"height":500,"caption":"Ciència Oberta"},"image":{"@id":"https://www.cienciaoberta.cat/#/schema/logo/image/"},"sameAs":["https://twitter.com/cienciaoberta","https://www.instagram.com/cienciaoberta/"]},{"@type":"Person","@id":"https://www.cienciaoberta.cat/#/schema/person/4028e8424b2a30a78a481536af76290e","name":"Quim Frigola Casals","image":{"@type":"ImageObject","inLanguage":"ca","@id":"https://www.cienciaoberta.cat/#/schema/person/image/","url":"https://www.cienciaoberta.cat/wp-content/uploads/2020/10/Quim-Frigola-150x150.jpg","contentUrl":"https://www.cienciaoberta.cat/wp-content/uploads/2020/10/Quim-Frigola-150x150.jpg","caption":"Quim Frigola Casals"},"description":"Des d'un petit poble al peu del Montseny vaig descobrir que m'agradaven dues coses; saber com funcionava el que hi havia al meu entorn i poder-ho explicar als altres. Així, les meves preguntes van anar augmentant fins que vaig tenir clar que em volia dedicar a la ciència. Finalment, vaig acabar estudiant Física i Matemàtiques a la Universitat Autònoma de Barcelona, descobrint la meva gran passió; les matemàtiques. Des de llavors, que exploro aquest món meravellós que hi ha darrere els patrons de la natura i intento transmetre aquesta passió als que m'envolten.","url":"https://www.cienciaoberta.cat/equip/quim/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+<link rel="alternate" type="application/rss+xml" title="Ciència Oberta &raquo; Canal d&#039;informació" href="https://www.cienciaoberta.cat/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ciència Oberta &raquo; Canal dels comentaris" href="https://www.cienciaoberta.cat/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ciència Oberta &raquo; El problema de Monty Hall Canal dels comentaris" href="https://www.cienciaoberta.cat/monty/feed/" />
+<meta content="Extra Child v.2.26.3.1563533806" name="generator"/><link rel='stylesheet' id='wp-quicklatex-format-css' href='https://www.cienciaoberta.cat/wp-content/plugins/wp-quicklatex/css/quicklatex-format.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.cienciaoberta.cat/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:"0 0 1em 0"}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='cookie-law-info-css' href='https://www.cienciaoberta.cat/wp-content/plugins/cookie-law-info/legacy/public/css/cookie-law-info-public.css?ver=3.0.8' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css' href='https://www.cienciaoberta.cat/wp-content/plugins/cookie-law-info/legacy/public/css/cookie-law-info-gdpr.css?ver=3.0.8' type='text/css' media='all' />
+<link rel='stylesheet' id='sow-accordion-default-9814b7affd00-css' href='https://www.cienciaoberta.cat/wp-content/uploads/siteorigin-widgets/sow-accordion-default-9814b7affd00.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wtr-css-css' href='https://www.cienciaoberta.cat/wp-content/plugins/worth-the-read/css/wtr.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ppress-frontend-css' href='https://www.cienciaoberta.cat/wp-content/plugins/wp-user-avatar/assets/css/frontend.min.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ppress-flatpickr-css' href='https://www.cienciaoberta.cat/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ppress-select2-css' href='https://www.cienciaoberta.cat/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='extra-style-parent-css' href='https://www.cienciaoberta.cat/wp-content/themes/Extra/style.min.css?ver=4.20.0' type='text/css' media='all' />
+<style id='extra-dynamic-critical-inline-css' type='text/css'>
+@font-face{font-family:ETmodules;font-display:block;src:url(//www.cienciaoberta.cat/wp-content/themes/Extra/core/admin/fonts/modules/all/modules.eot);src:url(//www.cienciaoberta.cat/wp-content/themes/Extra/core/admin/fonts/modules/all/modules.eot?#iefix) format("embedded-opentype"),url(//www.cienciaoberta.cat/wp-content/themes/Extra/core/admin/fonts/modules/all/modules.woff) format("woff"),url(//www.cienciaoberta.cat/wp-content/themes/Extra/core/admin/fonts/modules/all/modules.ttf) format("truetype"),url(//www.cienciaoberta.cat/wp-content/themes/Extra/core/admin/fonts/modules/all/modules.svg#ETmodules) format("svg");font-weight:400;font-style:normal}
+.et_audio_content,.et_link_content,.et_quote_content{background-color:#2ea3f2}.et_pb_post .et-pb-controllers a{margin-bottom:10px}.format-gallery .et-pb-controllers{bottom:0}.et_pb_blog_grid .et_audio_content{margin-bottom:19px}.et_pb_row .et_pb_blog_grid .et_pb_post .et_pb_slide{min-height:180px}.et_audio_content .wp-block-audio{margin:0;padding:0}.et_audio_content h2{line-height:44px}.et_pb_column_1_2 .et_audio_content h2,.et_pb_column_1_3 .et_audio_content h2,.et_pb_column_1_4 .et_audio_content h2,.et_pb_column_1_5 .et_audio_content h2,.et_pb_column_1_6 .et_audio_content h2,.et_pb_column_2_5 .et_audio_content h2,.et_pb_column_3_5 .et_audio_content h2,.et_pb_column_3_8 .et_audio_content h2{margin-bottom:9px;margin-top:0}.et_pb_column_1_2 .et_audio_content,.et_pb_column_3_5 .et_audio_content{padding:35px 40px}.et_pb_column_1_2 .et_audio_content h2,.et_pb_column_3_5 .et_audio_content h2{line-height:32px}.et_pb_column_1_3 .et_audio_content,.et_pb_column_1_4 .et_audio_content,.et_pb_column_1_5 .et_audio_content,.et_pb_column_1_6 .et_audio_content,.et_pb_column_2_5 .et_audio_content,.et_pb_column_3_8 .et_audio_content{padding:35px 20px}.et_pb_column_1_3 .et_audio_content h2,.et_pb_column_1_4 .et_audio_content h2,.et_pb_column_1_5 .et_audio_content h2,.et_pb_column_1_6 .et_audio_content h2,.et_pb_column_2_5 .et_audio_content h2,.et_pb_column_3_8 .et_audio_content h2{font-size:18px;line-height:26px}article.et_pb_has_overlay .et_pb_blog_image_container{position:relative}.et_pb_post>.et_main_video_container{position:relative;margin-bottom:30px}.et_pb_post .et_pb_video_overlay .et_pb_video_play{color:#fff}.et_pb_post .et_pb_video_overlay_hover:hover{background:rgba(0,0,0,.6)}.et_audio_content,.et_link_content,.et_quote_content{text-align:center;word-wrap:break-word;position:relative;padding:50px 60px}.et_audio_content h2,.et_link_content a.et_link_main_url,.et_link_content h2,.et_quote_content blockquote cite,.et_quote_content blockquote p{color:#fff!important}.et_quote_main_link{position:absolute;text-indent:-9999px;width:100%;height:100%;display:block;top:0;left:0}.et_quote_content blockquote{padding:0;margin:0;border:none}.et_audio_content h2,.et_link_content h2,.et_quote_content blockquote p{margin-top:0}.et_audio_content h2{margin-bottom:20px}.et_audio_content h2,.et_link_content h2,.et_quote_content blockquote p{line-height:44px}.et_link_content a.et_link_main_url,.et_quote_content blockquote cite{font-size:18px;font-weight:200}.et_quote_content blockquote cite{font-style:normal}.et_pb_column_2_3 .et_quote_content{padding:50px 42px 45px}.et_pb_column_2_3 .et_audio_content,.et_pb_column_2_3 .et_link_content{padding:40px 40px 45px}.et_pb_column_1_2 .et_audio_content,.et_pb_column_1_2 .et_link_content,.et_pb_column_1_2 .et_quote_content,.et_pb_column_3_5 .et_audio_content,.et_pb_column_3_5 .et_link_content,.et_pb_column_3_5 .et_quote_content{padding:35px 40px}.et_pb_column_1_2 .et_quote_content blockquote p,.et_pb_column_3_5 .et_quote_content blockquote p{font-size:26px;line-height:32px}.et_pb_column_1_2 .et_audio_content h2,.et_pb_column_1_2 .et_link_content h2,.et_pb_column_3_5 .et_audio_content h2,.et_pb_column_3_5 .et_link_content h2{line-height:32px}.et_pb_column_1_2 .et_link_content a.et_link_main_url,.et_pb_column_1_2 .et_quote_content blockquote cite,.et_pb_column_3_5 .et_link_content a.et_link_main_url,.et_pb_column_3_5 .et_quote_content blockquote cite{font-size:14px}.et_pb_column_1_3 .et_quote_content,.et_pb_column_1_4 .et_quote_content,.et_pb_column_1_5 .et_quote_content,.et_pb_column_1_6 .et_quote_content,.et_pb_column_2_5 .et_quote_content,.et_pb_column_3_8 .et_quote_content{padding:35px 30px 32px}.et_pb_column_1_3 .et_audio_content,.et_pb_column_1_3 .et_link_content,.et_pb_column_1_4 .et_audio_content,.et_pb_column_1_4 .et_link_content,.et_pb_column_1_5 .et_audio_content,.et_pb_column_1_5 .et_link_content,.et_pb_column_1_6 .et_audio_content,.et_pb_column_1_6 .et_link_content,.et_pb_column_2_5 .et_audio_content,.et_pb_column_2_5 .et_link_content,.et_pb_column_3_8 .et_audio_content,.et_pb_column_3_8 .et_link_content{padding:35px 20px}.et_pb_column_1_3 .et_audio_content h2,.et_pb_column_1_3 .et_link_content h2,.et_pb_column_1_3 .et_quote_content blockquote p,.et_pb_column_1_4 .et_audio_content h2,.et_pb_column_1_4 .et_link_content h2,.et_pb_column_1_4 .et_quote_content blockquote p,.et_pb_column_1_5 .et_audio_content h2,.et_pb_column_1_5 .et_link_content h2,.et_pb_column_1_5 .et_quote_content blockquote p,.et_pb_column_1_6 .et_audio_content h2,.et_pb_column_1_6 .et_link_content h2,.et_pb_column_1_6 .et_quote_content blockquote p,.et_pb_column_2_5 .et_audio_content h2,.et_pb_column_2_5 .et_link_content h2,.et_pb_column_2_5 .et_quote_content blockquote p,.et_pb_column_3_8 .et_audio_content h2,.et_pb_column_3_8 .et_link_content h2,.et_pb_column_3_8 .et_quote_content blockquote p{font-size:18px;line-height:26px}.et_pb_column_1_3 .et_link_content a.et_link_main_url,.et_pb_column_1_3 .et_quote_content blockquote cite,.et_pb_column_1_4 .et_link_content a.et_link_main_url,.et_pb_column_1_4 .et_quote_content blockquote cite,.et_pb_column_1_5 .et_link_content a.et_link_main_url,.et_pb_column_1_5 .et_quote_content blockquote cite,.et_pb_column_1_6 .et_link_content a.et_link_main_url,.et_pb_column_1_6 .et_quote_content blockquote cite,.et_pb_column_2_5 .et_link_content a.et_link_main_url,.et_pb_column_2_5 .et_quote_content blockquote cite,.et_pb_column_3_8 .et_link_content a.et_link_main_url,.et_pb_column_3_8 .et_quote_content blockquote cite{font-size:14px}.et_pb_post .et_pb_gallery_post_type .et_pb_slide{min-height:500px;background-size:cover!important;background-position:top}.format-gallery .et_pb_slider.gallery-not-found .et_pb_slide{box-shadow:inset 0 0 10px rgba(0,0,0,.1)}.format-gallery .et_pb_slider:hover .et-pb-arrow-prev{left:0}.format-gallery .et_pb_slider:hover .et-pb-arrow-next{right:0}.et_pb_post>.et_pb_slider{margin-bottom:30px}.et_pb_column_3_4 .et_pb_post .et_pb_slide{min-height:442px}.et_pb_column_2_3 .et_pb_post .et_pb_slide{min-height:390px}.et_pb_column_1_2 .et_pb_post .et_pb_slide,.et_pb_column_3_5 .et_pb_post .et_pb_slide{min-height:284px}.et_pb_column_1_3 .et_pb_post .et_pb_slide,.et_pb_column_2_5 .et_pb_post .et_pb_slide,.et_pb_column_3_8 .et_pb_post .et_pb_slide{min-height:180px}.et_pb_column_1_4 .et_pb_post .et_pb_slide,.et_pb_column_1_5 .et_pb_post .et_pb_slide,.et_pb_column_1_6 .et_pb_post .et_pb_slide{min-height:125px}.et_pb_portfolio.et_pb_section_parallax .pagination,.et_pb_portfolio.et_pb_section_video .pagination,.et_pb_portfolio_grid.et_pb_section_parallax .pagination,.et_pb_portfolio_grid.et_pb_section_video .pagination{position:relative}.et_pb_bg_layout_light .et_pb_post .post-meta,.et_pb_bg_layout_light .et_pb_post .post-meta a,.et_pb_bg_layout_light .et_pb_post p{color:#666}.et_pb_bg_layout_dark .et_pb_post .post-meta,.et_pb_bg_layout_dark .et_pb_post .post-meta a,.et_pb_bg_layout_dark .et_pb_post p{color:inherit}.et_pb_text_color_dark .et_audio_content h2,.et_pb_text_color_dark .et_link_content a.et_link_main_url,.et_pb_text_color_dark .et_link_content h2,.et_pb_text_color_dark .et_quote_content blockquote cite,.et_pb_text_color_dark .et_quote_content blockquote p{color:#666!important}.et_pb_text_color_dark.et_audio_content h2,.et_pb_text_color_dark.et_link_content a.et_link_main_url,.et_pb_text_color_dark.et_link_content h2,.et_pb_text_color_dark.et_quote_content blockquote cite,.et_pb_text_color_dark.et_quote_content blockquote p{color:#bbb!important}.et_pb_text_color_dark.et_audio_content,.et_pb_text_color_dark.et_link_content,.et_pb_text_color_dark.et_quote_content{background-color:#e8e8e8}@media (min-width:981px) and (max-width:1100px){.et_quote_content{padding:50px 70px 45px}.et_pb_column_2_3 .et_quote_content{padding:50px 50px 45px}.et_pb_column_1_2 .et_quote_content,.et_pb_column_3_5 .et_quote_content{padding:35px 47px 30px}.et_pb_column_1_3 .et_quote_content,.et_pb_column_1_4 .et_quote_content,.et_pb_column_1_5 .et_quote_content,.et_pb_column_1_6 .et_quote_content,.et_pb_column_2_5 .et_quote_content,.et_pb_column_3_8 .et_quote_content{padding:35px 25px 32px}.et_pb_column_4_4 .et_pb_post .et_pb_slide{min-height:534px}.et_pb_column_3_4 .et_pb_post .et_pb_slide{min-height:392px}.et_pb_column_2_3 .et_pb_post .et_pb_slide{min-height:345px}.et_pb_column_1_2 .et_pb_post .et_pb_slide,.et_pb_column_3_5 .et_pb_post .et_pb_slide{min-height:250px}.et_pb_column_1_3 .et_pb_post .et_pb_slide,.et_pb_column_2_5 .et_pb_post .et_pb_slide,.et_pb_column_3_8 .et_pb_post .et_pb_slide{min-height:155px}.et_pb_column_1_4 .et_pb_post .et_pb_slide,.et_pb_column_1_5 .et_pb_post .et_pb_slide,.et_pb_column_1_6 .et_pb_post .et_pb_slide{min-height:108px}}@media (max-width:980px){.et_pb_bg_layout_dark_tablet .et_audio_content h2{color:#fff!important}.et_pb_text_color_dark_tablet.et_audio_content h2{color:#bbb!important}.et_pb_text_color_dark_tablet.et_audio_content{background-color:#e8e8e8}.et_pb_bg_layout_dark_tablet .et_audio_content h2,.et_pb_bg_layout_dark_tablet .et_link_content a.et_link_main_url,.et_pb_bg_layout_dark_tablet .et_link_content h2,.et_pb_bg_layout_dark_tablet .et_quote_content blockquote cite,.et_pb_bg_layout_dark_tablet .et_quote_content blockquote p{color:#fff!important}.et_pb_text_color_dark_tablet .et_audio_content h2,.et_pb_text_color_dark_tablet .et_link_content a.et_link_main_url,.et_pb_text_color_dark_tablet .et_link_content h2,.et_pb_text_color_dark_tablet .et_quote_content blockquote cite,.et_pb_text_color_dark_tablet .et_quote_content blockquote p{color:#666!important}.et_pb_text_color_dark_tablet.et_audio_content h2,.et_pb_text_color_dark_tablet.et_link_content a.et_link_main_url,.et_pb_text_color_dark_tablet.et_link_content h2,.et_pb_text_color_dark_tablet.et_quote_content blockquote cite,.et_pb_text_color_dark_tablet.et_quote_content blockquote p{color:#bbb!important}.et_pb_text_color_dark_tablet.et_audio_content,.et_pb_text_color_dark_tablet.et_link_content,.et_pb_text_color_dark_tablet.et_quote_content{background-color:#e8e8e8}}@media (min-width:768px) and (max-width:980px){.et_audio_content h2{font-size:26px!important;line-height:44px!important;margin-bottom:24px!important}.et_pb_post>.et_pb_gallery_post_type>.et_pb_slides>.et_pb_slide{min-height:384px!important}.et_quote_content{padding:50px 43px 45px!important}.et_quote_content blockquote p{font-size:26px!important;line-height:44px!important}.et_quote_content blockquote cite{font-size:18px!important}.et_link_content{padding:40px 40px 45px}.et_link_content h2{font-size:26px!important;line-height:44px!important}.et_link_content a.et_link_main_url{font-size:18px!important}}@media (max-width:767px){.et_audio_content h2,.et_link_content h2,.et_quote_content,.et_quote_content blockquote p{font-size:20px!important;line-height:26px!important}.et_audio_content,.et_link_content{padding:35px 20px!important}.et_audio_content h2{margin-bottom:9px!important}.et_pb_bg_layout_dark_phone .et_audio_content h2{color:#fff!important}.et_pb_text_color_dark_phone.et_audio_content{background-color:#e8e8e8}.et_link_content a.et_link_main_url,.et_quote_content blockquote cite{font-size:14px!important}.format-gallery .et-pb-controllers{height:auto}.et_pb_post>.et_pb_gallery_post_type>.et_pb_slides>.et_pb_slide{min-height:222px!important}.et_pb_bg_layout_dark_phone .et_audio_content h2,.et_pb_bg_layout_dark_phone .et_link_content a.et_link_main_url,.et_pb_bg_layout_dark_phone .et_link_content h2,.et_pb_bg_layout_dark_phone .et_quote_content blockquote cite,.et_pb_bg_layout_dark_phone .et_quote_content blockquote p{color:#fff!important}.et_pb_text_color_dark_phone .et_audio_content h2,.et_pb_text_color_dark_phone .et_link_content a.et_link_main_url,.et_pb_text_color_dark_phone .et_link_content h2,.et_pb_text_color_dark_phone .et_quote_content blockquote cite,.et_pb_text_color_dark_phone .et_quote_content blockquote p{color:#666!important}.et_pb_text_color_dark_phone.et_audio_content h2,.et_pb_text_color_dark_phone.et_link_content a.et_link_main_url,.et_pb_text_color_dark_phone.et_link_content h2,.et_pb_text_color_dark_phone.et_quote_content blockquote cite,.et_pb_text_color_dark_phone.et_quote_content blockquote p{color:#bbb!important}.et_pb_text_color_dark_phone.et_audio_content,.et_pb_text_color_dark_phone.et_link_content,.et_pb_text_color_dark_phone.et_quote_content{background-color:#e8e8e8}}@media (max-width:479px){.et_pb_column_1_2 .et_pb_carousel_item .et_pb_video_play,.et_pb_column_1_3 .et_pb_carousel_item .et_pb_video_play,.et_pb_column_2_3 .et_pb_carousel_item .et_pb_video_play,.et_pb_column_2_5 .et_pb_carousel_item .et_pb_video_play,.et_pb_column_3_5 .et_pb_carousel_item .et_pb_video_play,.et_pb_column_3_8 .et_pb_carousel_item .et_pb_video_play{font-size:1.5rem;line-height:1.5rem;margin-left:-.75rem;margin-top:-.75rem}.et_audio_content,.et_quote_content{padding:35px 20px!important}.et_pb_post>.et_pb_gallery_post_type>.et_pb_slides>.et_pb_slide{min-height:156px!important}}.et_full_width_page .et_gallery_item{float:left;width:20.875%;margin:0 5.5% 5.5% 0}.et_full_width_page .et_gallery_item:nth-child(3n){margin-right:5.5%}.et_full_width_page .et_gallery_item:nth-child(3n+1){clear:none}.et_full_width_page .et_gallery_item:nth-child(4n){margin-right:0}.et_full_width_page .et_gallery_item:nth-child(4n+1){clear:both}
+.et_pb_slider{position:relative;overflow:hidden}.et_pb_slide{padding:0 6%;background-size:cover;background-position:50%;background-repeat:no-repeat}.et_pb_slider .et_pb_slide{display:none;float:left;margin-right:-100%;position:relative;width:100%;text-align:center;list-style:none!important;background-position:50%;background-size:100%;background-size:cover}.et_pb_slider .et_pb_slide:first-child{display:list-item}.et-pb-controllers{position:absolute;bottom:20px;left:0;width:100%;text-align:center;z-index:10}.et-pb-controllers a{display:inline-block;background-color:hsla(0,0%,100%,.5);text-indent:-9999px;border-radius:7px;width:7px;height:7px;margin-right:10px;padding:0;opacity:.5}.et-pb-controllers .et-pb-active-control{opacity:1}.et-pb-controllers a:last-child{margin-right:0}.et-pb-controllers .et-pb-active-control{background-color:#fff}.et_pb_slides .et_pb_temp_slide{display:block}.et_pb_slides:after{content:"";display:block;clear:both;visibility:hidden;line-height:0;height:0;width:0}@media (max-width:980px){.et_pb_bg_layout_light_tablet .et-pb-controllers .et-pb-active-control{background-color:#333}.et_pb_bg_layout_light_tablet .et-pb-controllers a{background-color:rgba(0,0,0,.3)}.et_pb_bg_layout_light_tablet .et_pb_slide_content{color:#333}.et_pb_bg_layout_dark_tablet .et_pb_slide_description{text-shadow:0 1px 3px rgba(0,0,0,.3)}.et_pb_bg_layout_dark_tablet .et_pb_slide_content{color:#fff}.et_pb_bg_layout_dark_tablet .et-pb-controllers .et-pb-active-control{background-color:#fff}.et_pb_bg_layout_dark_tablet .et-pb-controllers a{background-color:hsla(0,0%,100%,.5)}}@media (max-width:767px){.et-pb-controllers{position:absolute;bottom:5%;left:0;width:100%;text-align:center;z-index:10;height:14px}.et_transparent_nav .et_pb_section:first-child .et-pb-controllers{bottom:18px}.et_pb_bg_layout_light_phone.et_pb_slider_with_overlay .et_pb_slide_overlay_container,.et_pb_bg_layout_light_phone.et_pb_slider_with_text_overlay .et_pb_text_overlay_wrapper{background-color:hsla(0,0%,100%,.9)}.et_pb_bg_layout_light_phone .et-pb-controllers .et-pb-active-control{background-color:#333}.et_pb_bg_layout_dark_phone.et_pb_slider_with_overlay .et_pb_slide_overlay_container,.et_pb_bg_layout_dark_phone.et_pb_slider_with_text_overlay .et_pb_text_overlay_wrapper,.et_pb_bg_layout_light_phone .et-pb-controllers a{background-color:rgba(0,0,0,.3)}.et_pb_bg_layout_dark_phone .et-pb-controllers .et-pb-active-control{background-color:#fff}.et_pb_bg_layout_dark_phone .et-pb-controllers a{background-color:hsla(0,0%,100%,.5)}}.et_mobile_device .et_pb_slider_parallax .et_pb_slide,.et_mobile_device .et_pb_slides .et_parallax_bg.et_pb_parallax_css{background-attachment:scroll}
+.et-pb-arrow-next,.et-pb-arrow-prev{position:absolute;top:50%;z-index:100;font-size:48px;color:#fff;margin-top:-24px;transition:all .2s ease-in-out;opacity:0}.et_pb_bg_layout_light .et-pb-arrow-next,.et_pb_bg_layout_light .et-pb-arrow-prev{color:#333}.et_pb_slider:hover .et-pb-arrow-prev{left:22px;opacity:1}.et_pb_slider:hover .et-pb-arrow-next{right:22px;opacity:1}.et_pb_bg_layout_light .et-pb-controllers .et-pb-active-control{background-color:#333}.et_pb_bg_layout_light .et-pb-controllers a{background-color:rgba(0,0,0,.3)}.et-pb-arrow-next:hover,.et-pb-arrow-prev:hover{text-decoration:none}.et-pb-arrow-next span,.et-pb-arrow-prev span{display:none}.et-pb-arrow-prev{left:-22px}.et-pb-arrow-next{right:-22px}.et-pb-arrow-prev:before{content:"4"}.et-pb-arrow-next:before{content:"5"}.format-gallery .et-pb-arrow-next,.format-gallery .et-pb-arrow-prev{color:#fff}.et_pb_column_1_3 .et_pb_slider:hover .et-pb-arrow-prev,.et_pb_column_1_4 .et_pb_slider:hover .et-pb-arrow-prev,.et_pb_column_1_5 .et_pb_slider:hover .et-pb-arrow-prev,.et_pb_column_1_6 .et_pb_slider:hover .et-pb-arrow-prev,.et_pb_column_2_5 .et_pb_slider:hover .et-pb-arrow-prev{left:0}.et_pb_column_1_3 .et_pb_slider:hover .et-pb-arrow-next,.et_pb_column_1_4 .et_pb_slider:hover .et-pb-arrow-prev,.et_pb_column_1_5 .et_pb_slider:hover .et-pb-arrow-prev,.et_pb_column_1_6 .et_pb_slider:hover .et-pb-arrow-prev,.et_pb_column_2_5 .et_pb_slider:hover .et-pb-arrow-next{right:0}.et_pb_column_1_4 .et_pb_slider .et_pb_slide,.et_pb_column_1_5 .et_pb_slider .et_pb_slide,.et_pb_column_1_6 .et_pb_slider .et_pb_slide{min-height:170px}.et_pb_column_1_4 .et_pb_slider:hover .et-pb-arrow-next,.et_pb_column_1_5 .et_pb_slider:hover .et-pb-arrow-next,.et_pb_column_1_6 .et_pb_slider:hover .et-pb-arrow-next{right:0}@media (max-width:980px){.et_pb_bg_layout_light_tablet .et-pb-arrow-next,.et_pb_bg_layout_light_tablet .et-pb-arrow-prev{color:#333}.et_pb_bg_layout_dark_tablet .et-pb-arrow-next,.et_pb_bg_layout_dark_tablet .et-pb-arrow-prev{color:#fff}}@media (max-width:767px){.et_pb_slider:hover .et-pb-arrow-prev{left:0;opacity:1}.et_pb_slider:hover .et-pb-arrow-next{right:0;opacity:1}.et_pb_bg_layout_light_phone .et-pb-arrow-next,.et_pb_bg_layout_light_phone .et-pb-arrow-prev{color:#333}.et_pb_bg_layout_dark_phone .et-pb-arrow-next,.et_pb_bg_layout_dark_phone .et-pb-arrow-prev{color:#fff}}.et_mobile_device .et-pb-arrow-prev{left:22px;opacity:1}.et_mobile_device .et-pb-arrow-next{right:22px;opacity:1}@media (max-width:767px){.et_mobile_device .et-pb-arrow-prev{left:0;opacity:1}.et_mobile_device .et-pb-arrow-next{right:0;opacity:1}}
+.et_overlay{z-index:-1;position:absolute;top:0;left:0;display:block;width:100%;height:100%;background:hsla(0,0%,100%,.9);opacity:0;pointer-events:none;transition:all .3s;border:1px solid #e5e5e5;box-sizing:border-box;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-font-smoothing:antialiased}.et_overlay:before{color:#2ea3f2;content:"\E050";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:32px;transition:all .4s}.et_portfolio_image,.et_shop_image{position:relative;display:block}.et_pb_has_overlay:not(.et_pb_image):hover .et_overlay,.et_portfolio_image:hover .et_overlay,.et_shop_image:hover .et_overlay{z-index:3;opacity:1}#ie7 .et_overlay,#ie8 .et_overlay{display:none}.et_pb_module.et_pb_has_overlay{position:relative}.et_pb_module.et_pb_has_overlay .et_overlay,article.et_pb_has_overlay{border:none}
+.et_pb_blog_grid .et_audio_container .mejs-container .mejs-controls .mejs-time span{font-size:14px}.et_audio_container .mejs-container{width:auto!important;min-width:unset!important;height:auto!important}.et_audio_container .mejs-container,.et_audio_container .mejs-container .mejs-controls,.et_audio_container .mejs-embed,.et_audio_container .mejs-embed body{background:none;height:auto}.et_audio_container .mejs-controls .mejs-time-rail .mejs-time-loaded,.et_audio_container .mejs-time.mejs-currenttime-container{display:none!important}.et_audio_container .mejs-time{display:block!important;padding:0;margin-left:10px;margin-right:90px;line-height:inherit}.et_audio_container .mejs-android .mejs-time,.et_audio_container .mejs-ios .mejs-time,.et_audio_container .mejs-ipad .mejs-time,.et_audio_container .mejs-iphone .mejs-time{margin-right:0}.et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,.et_audio_container .mejs-controls .mejs-time-rail .mejs-time-total{background:hsla(0,0%,100%,.5);border-radius:5px;height:4px;margin:8px 0 0;top:0;right:0;left:auto}.et_audio_container .mejs-controls>div{height:20px!important}.et_audio_container .mejs-controls div.mejs-time-rail{padding-top:0;position:relative;display:block!important;margin-left:42px;margin-right:0}.et_audio_container span.mejs-time-total.mejs-time-slider{display:block!important;position:relative!important;max-width:100%;min-width:unset!important}.et_audio_container .mejs-button.mejs-volume-button{width:auto;height:auto;margin-left:auto;position:absolute;right:59px;bottom:-2px}.et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,.et_audio_container .mejs-controls .mejs-time-rail .mejs-time-current{background:#fff;height:4px;border-radius:5px}.et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle,.et_audio_container .mejs-controls .mejs-time-rail .mejs-time-handle{display:block;border:none;width:10px}.et_audio_container .mejs-time-rail .mejs-time-handle-content{border-radius:100%;transform:scale(1)}.et_pb_text_color_dark .et_audio_container .mejs-time-rail .mejs-time-handle-content{border-color:#666}.et_audio_container .mejs-time-rail .mejs-time-hovered{height:4px}.et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle{background:#fff;border-radius:5px;height:10px;position:absolute;top:-3px}.et_audio_container .mejs-container .mejs-controls .mejs-time span{font-size:18px}.et_audio_container .mejs-controls a.mejs-horizontal-volume-slider{display:block!important;height:19px;margin-left:5px;position:absolute;right:0;bottom:0}.et_audio_container .mejs-controls div.mejs-horizontal-volume-slider{height:4px}.et_audio_container .mejs-playpause-button button,.et_audio_container .mejs-volume-button button{background:none!important;margin:0!important;width:auto!important;height:auto!important;position:relative!important;z-index:99}.et_audio_container .mejs-playpause-button button:before{content:"E"!important;font-size:32px;left:0;top:-8px}.et_audio_container .mejs-playpause-button button:before,.et_audio_container .mejs-volume-button button:before{color:#fff}.et_audio_container .mejs-playpause-button{margin-top:-7px!important;width:auto!important;height:auto!important;position:absolute}.et_audio_container .mejs-controls .mejs-button button:focus{outline:none}.et_audio_container .mejs-playpause-button.mejs-pause button:before{content:"`"!important}.et_audio_container .mejs-volume-button button:before{content:"\E068";font-size:18px}.et_pb_text_color_dark .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,.et_pb_text_color_dark .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-total{background:hsla(0,0%,60%,.5)}.et_pb_text_color_dark .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,.et_pb_text_color_dark .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-current{background:#999}.et_pb_text_color_dark .et_audio_container .mejs-playpause-button button:before,.et_pb_text_color_dark .et_audio_container .mejs-volume-button button:before{color:#666}.et_pb_text_color_dark .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle,.et_pb_text_color_dark .mejs-controls .mejs-time-rail .mejs-time-handle{background:#666}.et_pb_text_color_dark .mejs-container .mejs-controls .mejs-time span{color:#999}.et_pb_column_1_3 .et_audio_container .mejs-container .mejs-controls .mejs-time span,.et_pb_column_1_4 .et_audio_container .mejs-container .mejs-controls .mejs-time span,.et_pb_column_1_5 .et_audio_container .mejs-container .mejs-controls .mejs-time span,.et_pb_column_1_6 .et_audio_container .mejs-container .mejs-controls .mejs-time span,.et_pb_column_2_5 .et_audio_container .mejs-container .mejs-controls .mejs-time span,.et_pb_column_3_8 .et_audio_container .mejs-container .mejs-controls .mejs-time span{font-size:14px}.et_audio_container .mejs-container .mejs-controls{padding:0;flex-wrap:wrap;min-width:unset!important;position:relative}@media (max-width:980px){.et_pb_column_1_3 .et_audio_container .mejs-container .mejs-controls .mejs-time span,.et_pb_column_1_4 .et_audio_container .mejs-container .mejs-controls .mejs-time span,.et_pb_column_1_5 .et_audio_container .mejs-container .mejs-controls .mejs-time span,.et_pb_column_1_6 .et_audio_container .mejs-container .mejs-controls .mejs-time span,.et_pb_column_2_5 .et_audio_container .mejs-container .mejs-controls .mejs-time span,.et_pb_column_3_8 .et_audio_container .mejs-container .mejs-controls .mejs-time span{font-size:18px}.et_pb_bg_layout_dark_tablet .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,.et_pb_bg_layout_dark_tablet .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-total{background:hsla(0,0%,100%,.5)}.et_pb_bg_layout_dark_tablet .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,.et_pb_bg_layout_dark_tablet .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-current{background:#fff}.et_pb_bg_layout_dark_tablet .et_audio_container .mejs-playpause-button button:before,.et_pb_bg_layout_dark_tablet .et_audio_container .mejs-volume-button button:before{color:#fff}.et_pb_bg_layout_dark_tablet .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle,.et_pb_bg_layout_dark_tablet .mejs-controls .mejs-time-rail .mejs-time-handle{background:#fff}.et_pb_bg_layout_dark_tablet .mejs-container .mejs-controls .mejs-time span{color:#fff}.et_pb_text_color_dark_tablet .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,.et_pb_text_color_dark_tablet .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-total{background:hsla(0,0%,60%,.5)}.et_pb_text_color_dark_tablet .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,.et_pb_text_color_dark_tablet .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-current{background:#999}.et_pb_text_color_dark_tablet .et_audio_container .mejs-playpause-button button:before,.et_pb_text_color_dark_tablet .et_audio_container .mejs-volume-button button:before{color:#666}.et_pb_text_color_dark_tablet .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle,.et_pb_text_color_dark_tablet .mejs-controls .mejs-time-rail .mejs-time-handle{background:#666}.et_pb_text_color_dark_tablet .mejs-container .mejs-controls .mejs-time span{color:#999}}@media (max-width:767px){.et_audio_container .mejs-container .mejs-controls .mejs-time span{font-size:14px!important}.et_pb_bg_layout_dark_phone .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,.et_pb_bg_layout_dark_phone .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-total{background:hsla(0,0%,100%,.5)}.et_pb_bg_layout_dark_phone .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,.et_pb_bg_layout_dark_phone .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-current{background:#fff}.et_pb_bg_layout_dark_phone .et_audio_container .mejs-playpause-button button:before,.et_pb_bg_layout_dark_phone .et_audio_container .mejs-volume-button button:before{color:#fff}.et_pb_bg_layout_dark_phone .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle,.et_pb_bg_layout_dark_phone .mejs-controls .mejs-time-rail .mejs-time-handle{background:#fff}.et_pb_bg_layout_dark_phone .mejs-container .mejs-controls .mejs-time span{color:#fff}.et_pb_text_color_dark_phone .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,.et_pb_text_color_dark_phone .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-total{background:hsla(0,0%,60%,.5)}.et_pb_text_color_dark_phone .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,.et_pb_text_color_dark_phone .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-current{background:#999}.et_pb_text_color_dark_phone .et_audio_container .mejs-playpause-button button:before,.et_pb_text_color_dark_phone .et_audio_container .mejs-volume-button button:before{color:#666}.et_pb_text_color_dark_phone .et_audio_container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle,.et_pb_text_color_dark_phone .mejs-controls .mejs-time-rail .mejs-time-handle{background:#666}.et_pb_text_color_dark_phone .mejs-container .mejs-controls .mejs-time span{color:#999}}
+.et_pb_video_box{display:block;position:relative;z-index:1;line-height:0}.et_pb_video_box video{width:100%!important;height:auto!important}.et_pb_video_overlay{position:absolute;z-index:10;top:0;left:0;height:100%;width:100%;background-size:cover;background-repeat:no-repeat;background-position:50%;cursor:pointer}.et_pb_video_play:before{font-family:ETmodules;content:"I"}.et_pb_video_play{display:block;position:absolute;z-index:100;color:#fff;left:50%;top:50%}.et_pb_column_1_2 .et_pb_video_play,.et_pb_column_2_3 .et_pb_video_play,.et_pb_column_3_4 .et_pb_video_play,.et_pb_column_3_5 .et_pb_video_play,.et_pb_column_4_4 .et_pb_video_play{font-size:6rem;line-height:6rem;margin-left:-3rem;margin-top:-3rem}.et_pb_column_1_3 .et_pb_video_play,.et_pb_column_1_4 .et_pb_video_play,.et_pb_column_1_5 .et_pb_video_play,.et_pb_column_1_6 .et_pb_video_play,.et_pb_column_2_5 .et_pb_video_play,.et_pb_column_3_8 .et_pb_video_play{font-size:3rem;line-height:3rem;margin-left:-1.5rem;margin-top:-1.5rem}.et_pb_bg_layout_light .et_pb_video_play{color:#333}.et_pb_video_overlay_hover{background:transparent;width:100%;height:100%;position:absolute;z-index:100;transition:all .5s ease-in-out}.et_pb_video .et_pb_video_overlay_hover:hover{background:rgba(0,0,0,.6)}@media (min-width:768px) and (max-width:980px){.et_pb_column_1_3 .et_pb_video_play,.et_pb_column_1_4 .et_pb_video_play,.et_pb_column_1_5 .et_pb_video_play,.et_pb_column_1_6 .et_pb_video_play,.et_pb_column_2_5 .et_pb_video_play,.et_pb_column_3_8 .et_pb_video_play{font-size:6rem;line-height:6rem;margin-left:-3rem;margin-top:-3rem}}@media (max-width:980px){.et_pb_bg_layout_light_tablet .et_pb_video_play{color:#333}}@media (max-width:768px){.et_pb_column_1_2 .et_pb_video_play,.et_pb_column_2_3 .et_pb_video_play,.et_pb_column_3_4 .et_pb_video_play,.et_pb_column_3_5 .et_pb_video_play,.et_pb_column_4_4 .et_pb_video_play{font-size:3rem;line-height:3rem;margin-left:-1.5rem;margin-top:-1.5rem}}@media (max-width:767px){.et_pb_bg_layout_light_phone .et_pb_video_play{color:#333}}
+.et_post_gallery{padding:0!important;line-height:1.7!important;list-style:none!important}.et_gallery_item{float:left;width:28.353%;margin:0 7.47% 7.47% 0}.blocks-gallery-item,.et_gallery_item{padding-left:0!important}.blocks-gallery-item:before,.et_gallery_item:before{display:none}.et_gallery_item:nth-child(3n){margin-right:0}.et_gallery_item:nth-child(3n+1){clear:both}
+.et_pb_post{margin-bottom:60px;word-wrap:break-word}.et_pb_fullwidth_post_content.et_pb_with_border img,.et_pb_post_content.et_pb_with_border img,.et_pb_with_border .et_pb_post .et_pb_slides,.et_pb_with_border .et_pb_post img:not(.woocommerce-placeholder),.et_pb_with_border.et_pb_posts .et_pb_post,.et_pb_with_border.et_pb_posts_nav span.nav-next a,.et_pb_with_border.et_pb_posts_nav span.nav-previous a{border:0 solid #333}.et_pb_post .entry-content{padding-top:30px}.et_pb_post .entry-featured-image-url{display:block;position:relative;margin-bottom:30px}.et_pb_post .entry-title a,.et_pb_post h2 a{text-decoration:none}.et_pb_post .post-meta{font-size:14px;margin-bottom:6px}.et_pb_post .more,.et_pb_post .post-meta a{text-decoration:none}.et_pb_post .more{color:#82c0c7}.et_pb_posts a.more-link{clear:both;display:block}.et_pb_posts .et_pb_post{position:relative}.et_pb_has_overlay.et_pb_post .et_pb_image_container a{display:block;position:relative;overflow:hidden}.et_pb_image_container img,.et_pb_post a img{vertical-align:bottom;max-width:100%}@media (min-width:981px) and (max-width:1100px){.et_pb_post{margin-bottom:42px}}@media (max-width:980px){.et_pb_post{margin-bottom:42px}.et_pb_bg_layout_light_tablet .et_pb_post .post-meta,.et_pb_bg_layout_light_tablet .et_pb_post .post-meta a,.et_pb_bg_layout_light_tablet .et_pb_post p{color:#666}.et_pb_bg_layout_dark_tablet .et_pb_post .post-meta,.et_pb_bg_layout_dark_tablet .et_pb_post .post-meta a,.et_pb_bg_layout_dark_tablet .et_pb_post p{color:inherit}.et_pb_bg_layout_dark_tablet .comment_postinfo a,.et_pb_bg_layout_dark_tablet .comment_postinfo span{color:#fff}}@media (max-width:767px){.et_pb_post{margin-bottom:42px}.et_pb_post>h2{font-size:18px}.et_pb_bg_layout_light_phone .et_pb_post .post-meta,.et_pb_bg_layout_light_phone .et_pb_post .post-meta a,.et_pb_bg_layout_light_phone .et_pb_post p{color:#666}.et_pb_bg_layout_dark_phone .et_pb_post .post-meta,.et_pb_bg_layout_dark_phone .et_pb_post .post-meta a,.et_pb_bg_layout_dark_phone .et_pb_post p{color:inherit}.et_pb_bg_layout_dark_phone .comment_postinfo a,.et_pb_bg_layout_dark_phone .comment_postinfo span{color:#fff}}@media (max-width:479px){.et_pb_post{margin-bottom:42px}.et_pb_post h2{font-size:16px;padding-bottom:0}.et_pb_post .post-meta{color:#666;font-size:14px}}
+@media (min-width:981px){.et_pb_gutters3 .et_pb_column,.et_pb_gutters3.et_pb_row .et_pb_column{margin-right:5.5%}.et_pb_gutters3 .et_pb_column_4_4,.et_pb_gutters3.et_pb_row .et_pb_column_4_4{width:100%}.et_pb_gutters3 .et_pb_column_4_4 .et_pb_module,.et_pb_gutters3.et_pb_row .et_pb_column_4_4 .et_pb_module{margin-bottom:2.75%}.et_pb_gutters3 .et_pb_column_3_4,.et_pb_gutters3.et_pb_row .et_pb_column_3_4{width:73.625%}.et_pb_gutters3 .et_pb_column_3_4 .et_pb_module,.et_pb_gutters3.et_pb_row .et_pb_column_3_4 .et_pb_module{margin-bottom:3.735%}.et_pb_gutters3 .et_pb_column_2_3,.et_pb_gutters3.et_pb_row .et_pb_column_2_3{width:64.833%}.et_pb_gutters3 .et_pb_column_2_3 .et_pb_module,.et_pb_gutters3.et_pb_row .et_pb_column_2_3 .et_pb_module{margin-bottom:4.242%}.et_pb_gutters3 .et_pb_column_3_5,.et_pb_gutters3.et_pb_row .et_pb_column_3_5{width:57.8%}.et_pb_gutters3 .et_pb_column_3_5 .et_pb_module,.et_pb_gutters3.et_pb_row .et_pb_column_3_5 .et_pb_module{margin-bottom:4.758%}.et_pb_gutters3 .et_pb_column_1_2,.et_pb_gutters3.et_pb_row .et_pb_column_1_2{width:47.25%}.et_pb_gutters3 .et_pb_column_1_2 .et_pb_module,.et_pb_gutters3.et_pb_row .et_pb_column_1_2 .et_pb_module{margin-bottom:5.82%}.et_pb_gutters3 .et_pb_column_2_5,.et_pb_gutters3.et_pb_row .et_pb_column_2_5{width:36.7%}.et_pb_gutters3 .et_pb_column_2_5 .et_pb_module,.et_pb_gutters3.et_pb_row .et_pb_column_2_5 .et_pb_module{margin-bottom:7.493%}.et_pb_gutters3 .et_pb_column_1_3,.et_pb_gutters3.et_pb_row .et_pb_column_1_3{width:29.6667%}.et_pb_gutters3 .et_pb_column_1_3 .et_pb_module,.et_pb_gutters3.et_pb_row .et_pb_column_1_3 .et_pb_module{margin-bottom:9.27%}.et_pb_gutters3 .et_pb_column_1_4,.et_pb_gutters3.et_pb_row .et_pb_column_1_4{width:20.875%}.et_pb_gutters3 .et_pb_column_1_4 .et_pb_module,.et_pb_gutters3.et_pb_row .et_pb_column_1_4 .et_pb_module{margin-bottom:13.174%}.et_pb_gutters3 .et_pb_column_1_5,.et_pb_gutters3.et_pb_row .et_pb_column_1_5{width:15.6%}.et_pb_gutters3 .et_pb_column_1_5 .et_pb_module,.et_pb_gutters3.et_pb_row .et_pb_column_1_5 .et_pb_module{margin-bottom:17.628%}.et_pb_gutters3 .et_pb_column_1_6,.et_pb_gutters3.et_pb_row .et_pb_column_1_6{width:12.0833%}.et_pb_gutters3 .et_pb_column_1_6 .et_pb_module,.et_pb_gutters3.et_pb_row .et_pb_column_1_6 .et_pb_module{margin-bottom:22.759%}.et_pb_gutters3 .et_full_width_page.woocommerce-page ul.products li.product{width:20.875%;margin-right:5.5%;margin-bottom:5.5%}.et_pb_gutters3.et_left_sidebar.woocommerce-page #main-content ul.products li.product,.et_pb_gutters3.et_right_sidebar.woocommerce-page #main-content ul.products li.product{width:28.353%;margin-right:7.47%}.et_pb_gutters3.et_left_sidebar.woocommerce-page #main-content ul.products.columns-1 li.product,.et_pb_gutters3.et_right_sidebar.woocommerce-page #main-content ul.products.columns-1 li.product{width:100%;margin-right:0}.et_pb_gutters3.et_left_sidebar.woocommerce-page #main-content ul.products.columns-2 li.product,.et_pb_gutters3.et_right_sidebar.woocommerce-page #main-content ul.products.columns-2 li.product{width:48%;margin-right:4%}.et_pb_gutters3.et_left_sidebar.woocommerce-page #main-content ul.products.columns-2 li:nth-child(2n+2),.et_pb_gutters3.et_right_sidebar.woocommerce-page #main-content ul.products.columns-2 li:nth-child(2n+2){margin-right:0}.et_pb_gutters3.et_left_sidebar.woocommerce-page #main-content ul.products.columns-2 li:nth-child(3n+1),.et_pb_gutters3.et_right_sidebar.woocommerce-page #main-content ul.products.columns-2 li:nth-child(3n+1){clear:none}}
+@media (min-width:981px){.et_pb_gutter.et_pb_gutters1 #left-area{width:75%}.et_pb_gutter.et_pb_gutters1 #sidebar{width:25%}.et_pb_gutters1.et_right_sidebar #left-area{padding-right:0}.et_pb_gutters1.et_left_sidebar #left-area{padding-left:0}.et_pb_gutter.et_pb_gutters1.et_right_sidebar #main-content .container:before{right:25%!important}.et_pb_gutter.et_pb_gutters1.et_left_sidebar #main-content .container:before{left:25%!important}.et_pb_gutters1 .et_pb_column,.et_pb_gutters1.et_pb_row .et_pb_column{margin-right:0}.et_pb_gutters1 .et_pb_column_4_4,.et_pb_gutters1.et_pb_row .et_pb_column_4_4{width:100%}.et_pb_gutters1 .et_pb_column_4_4 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_4_4 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_3_4,.et_pb_gutters1.et_pb_row .et_pb_column_3_4{width:75%}.et_pb_gutters1 .et_pb_column_3_4 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_3_4 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_2_3,.et_pb_gutters1.et_pb_row .et_pb_column_2_3{width:66.667%}.et_pb_gutters1 .et_pb_column_2_3 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_2_3 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_3_5,.et_pb_gutters1.et_pb_row .et_pb_column_3_5{width:60%}.et_pb_gutters1 .et_pb_column_3_5 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_3_5 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_1_2,.et_pb_gutters1.et_pb_row .et_pb_column_1_2{width:50%}.et_pb_gutters1 .et_pb_column_1_2 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_1_2 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_2_5,.et_pb_gutters1.et_pb_row .et_pb_column_2_5{width:40%}.et_pb_gutters1 .et_pb_column_2_5 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_2_5 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_1_3,.et_pb_gutters1.et_pb_row .et_pb_column_1_3{width:33.3333%}.et_pb_gutters1 .et_pb_column_1_3 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_1_3 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_1_4,.et_pb_gutters1.et_pb_row .et_pb_column_1_4{width:25%}.et_pb_gutters1 .et_pb_column_1_4 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_1_4 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_1_5,.et_pb_gutters1.et_pb_row .et_pb_column_1_5{width:20%}.et_pb_gutters1 .et_pb_column_1_5 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_1_5 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_column_1_6,.et_pb_gutters1.et_pb_row .et_pb_column_1_6{width:16.6667%}.et_pb_gutters1 .et_pb_column_1_6 .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column_1_6 .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_full_width_page.woocommerce-page ul.products li.product{width:25%;margin-right:0;margin-bottom:0}.et_pb_gutters1.et_left_sidebar.woocommerce-page #main-content ul.products li.product,.et_pb_gutters1.et_right_sidebar.woocommerce-page #main-content ul.products li.product{width:33.333%;margin-right:0}}@media (max-width:980px){.et_pb_gutters1 .et_pb_column,.et_pb_gutters1 .et_pb_column .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column,.et_pb_gutters1.et_pb_row .et_pb_column .et_pb_module{margin-bottom:0}.et_pb_gutters1 .et_pb_row_1-2_1-4_1-4>.et_pb_column.et_pb_column_1_4,.et_pb_gutters1 .et_pb_row_1-4_1-4>.et_pb_column.et_pb_column_1_4,.et_pb_gutters1 .et_pb_row_1-4_1-4_1-2>.et_pb_column.et_pb_column_1_4,.et_pb_gutters1 .et_pb_row_1-5_1-5_3-5>.et_pb_column.et_pb_column_1_5,.et_pb_gutters1 .et_pb_row_3-5_1-5_1-5>.et_pb_column.et_pb_column_1_5,.et_pb_gutters1 .et_pb_row_4col>.et_pb_column.et_pb_column_1_4,.et_pb_gutters1 .et_pb_row_5col>.et_pb_column.et_pb_column_1_5,.et_pb_gutters1.et_pb_row_1-2_1-4_1-4>.et_pb_column.et_pb_column_1_4,.et_pb_gutters1.et_pb_row_1-4_1-4>.et_pb_column.et_pb_column_1_4,.et_pb_gutters1.et_pb_row_1-4_1-4_1-2>.et_pb_column.et_pb_column_1_4,.et_pb_gutters1.et_pb_row_1-5_1-5_3-5>.et_pb_column.et_pb_column_1_5,.et_pb_gutters1.et_pb_row_3-5_1-5_1-5>.et_pb_column.et_pb_column_1_5,.et_pb_gutters1.et_pb_row_4col>.et_pb_column.et_pb_column_1_4,.et_pb_gutters1.et_pb_row_5col>.et_pb_column.et_pb_column_1_5{width:50%;margin-right:0}.et_pb_gutters1 .et_pb_row_1-2_1-6_1-6_1-6>.et_pb_column.et_pb_column_1_6,.et_pb_gutters1 .et_pb_row_1-6_1-6_1-6>.et_pb_column.et_pb_column_1_6,.et_pb_gutters1 .et_pb_row_1-6_1-6_1-6_1-2>.et_pb_column.et_pb_column_1_6,.et_pb_gutters1 .et_pb_row_6col>.et_pb_column.et_pb_column_1_6,.et_pb_gutters1.et_pb_row_1-2_1-6_1-6_1-6>.et_pb_column.et_pb_column_1_6,.et_pb_gutters1.et_pb_row_1-6_1-6_1-6>.et_pb_column.et_pb_column_1_6,.et_pb_gutters1.et_pb_row_1-6_1-6_1-6_1-2>.et_pb_column.et_pb_column_1_6,.et_pb_gutters1.et_pb_row_6col>.et_pb_column.et_pb_column_1_6{width:33.333%;margin-right:0}.et_pb_gutters1 .et_pb_row_1-6_1-6_1-6_1-6>.et_pb_column.et_pb_column_1_6,.et_pb_gutters1.et_pb_row_1-6_1-6_1-6_1-6>.et_pb_column.et_pb_column_1_6{width:50%;margin-right:0}}@media (max-width:767px){.et_pb_gutters1 .et_pb_column,.et_pb_gutters1 .et_pb_column .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column,.et_pb_gutters1.et_pb_row .et_pb_column .et_pb_module{margin-bottom:0}}@media (max-width:479px){.et_pb_gutters1 .et_pb_column,.et_pb_gutters1.et_pb_row .et_pb_column{margin:0!important}.et_pb_gutters1 .et_pb_column .et_pb_module,.et_pb_gutters1.et_pb_row .et_pb_column .et_pb_module{margin-bottom:0}}
+@-webkit-keyframes fadeOutTop{0%{opacity:1;transform:translatey(0)}to{opacity:0;transform:translatey(-60%)}}@keyframes fadeOutTop{0%{opacity:1;transform:translatey(0)}to{opacity:0;transform:translatey(-60%)}}@-webkit-keyframes fadeInTop{0%{opacity:0;transform:translatey(-60%)}to{opacity:1;transform:translatey(0)}}@keyframes fadeInTop{0%{opacity:0;transform:translatey(-60%)}to{opacity:1;transform:translatey(0)}}@-webkit-keyframes fadeInBottom{0%{opacity:0;transform:translatey(60%)}to{opacity:1;transform:translatey(0)}}@keyframes fadeInBottom{0%{opacity:0;transform:translatey(60%)}to{opacity:1;transform:translatey(0)}}@-webkit-keyframes fadeOutBottom{0%{opacity:1;transform:translatey(0)}to{opacity:0;transform:translatey(60%)}}@keyframes fadeOutBottom{0%{opacity:1;transform:translatey(0)}to{opacity:0;transform:translatey(60%)}}@-webkit-keyframes Grow{0%{opacity:0;transform:scaleY(.5)}to{opacity:1;transform:scale(1)}}@keyframes Grow{0%{opacity:0;transform:scaleY(.5)}to{opacity:1;transform:scale(1)}}/*!
+	  * Animate.css - http://daneden.me/animate
+	  * Licensed under the MIT license - http://opensource.org/licenses/MIT
+	  * Copyright (c) 2015 Daniel Eden
+	 */@-webkit-keyframes flipInX{0%{transform:perspective(400px) rotateX(90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotateX(-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{transform:perspective(400px) rotateX(10deg);opacity:1}80%{transform:perspective(400px) rotateX(-5deg)}to{transform:perspective(400px)}}@keyframes flipInX{0%{transform:perspective(400px) rotateX(90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotateX(-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{transform:perspective(400px) rotateX(10deg);opacity:1}80%{transform:perspective(400px) rotateX(-5deg)}to{transform:perspective(400px)}}@-webkit-keyframes flipInY{0%{transform:perspective(400px) rotateY(90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotateY(-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{transform:perspective(400px) rotateY(10deg);opacity:1}80%{transform:perspective(400px) rotateY(-5deg)}to{transform:perspective(400px)}}@keyframes flipInY{0%{transform:perspective(400px) rotateY(90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotateY(-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{transform:perspective(400px) rotateY(10deg);opacity:1}80%{transform:perspective(400px) rotateY(-5deg)}to{transform:perspective(400px)}}
+.nav li li{padding:0 20px;margin:0}.et-menu li li a{padding:6px 20px;width:200px}.nav li{position:relative;line-height:1em}.nav li li{position:relative;line-height:2em}.nav li ul{position:absolute;padding:20px 0;z-index:9999;width:240px;background:#fff;visibility:hidden;opacity:0;border-top:3px solid #2ea3f2;box-shadow:0 2px 5px rgba(0,0,0,.1);-moz-box-shadow:0 2px 5px rgba(0,0,0,.1);-webkit-box-shadow:0 2px 5px rgba(0,0,0,.1);-webkit-transform:translateZ(0);text-align:left}.nav li.et-hover>ul{visibility:visible}.nav li.et-touch-hover>ul,.nav li:hover>ul{opacity:1;visibility:visible}.nav li li ul{z-index:1000;top:-23px;left:240px}.nav li.et-reverse-direction-nav li ul{left:auto;right:240px}.nav li:hover{visibility:inherit}.et_mobile_menu li a,.nav li li a{font-size:14px;transition:opacity .2s ease-in-out,background-color .2s ease-in-out}.et_mobile_menu li a:hover,.nav ul li a:hover{background-color:rgba(0,0,0,.03);opacity:.7}.et-dropdown-removing>ul{display:none}.mega-menu .et-dropdown-removing>ul{display:block}.et-menu .menu-item-has-children>a:first-child:after{font-family:ETmodules;content:"3";font-size:16px;position:absolute;right:0;top:0;font-weight:800}.et-menu .menu-item-has-children>a:first-child{padding-right:20px}.et-menu li li.menu-item-has-children>a:first-child:after{right:20px;top:6px}.et-menu-nav li.mega-menu{position:inherit}.et-menu-nav li.mega-menu>ul{padding:30px 20px;position:absolute!important;width:100%;left:0!important}.et-menu-nav li.mega-menu ul li{margin:0;float:left!important;display:block!important;padding:0!important}.et-menu-nav li.mega-menu li>ul{-webkit-animation:none!important;animation:none!important;padding:0;border:none;left:auto;top:auto;width:240px!important;position:relative;box-shadow:none;-webkit-box-shadow:none}.et-menu-nav li.mega-menu li ul{visibility:visible;opacity:1;display:none}.et-menu-nav li.mega-menu.et-hover li ul,.et-menu-nav li.mega-menu:hover li ul{display:block}.et-menu-nav li.mega-menu:hover>ul{opacity:1!important;visibility:visible!important}.et-menu-nav li.mega-menu>ul>li>a:first-child{padding-top:0!important;font-weight:700;border-bottom:1px solid rgba(0,0,0,.03)}.et-menu-nav li.mega-menu>ul>li>a:first-child:hover{background-color:transparent!important}.et-menu-nav li.mega-menu li>a{width:200px!important}.et-menu-nav li.mega-menu.mega-menu-parent li>a,.et-menu-nav li.mega-menu.mega-menu-parent li li{width:100%!important}.et-menu-nav li.mega-menu.mega-menu-parent li>.sub-menu{float:left;width:100%!important}.et-menu-nav li.mega-menu>ul>li{width:25%;margin:0}.et-menu-nav li.mega-menu.mega-menu-parent-3>ul>li{width:33.33%}.et-menu-nav li.mega-menu.mega-menu-parent-2>ul>li{width:50%}.et-menu-nav li.mega-menu.mega-menu-parent-1>ul>li{width:100%}.et_pb_fullwidth_menu li.mega-menu .menu-item-has-children>a:first-child:after,.et_pb_menu li.mega-menu .menu-item-has-children>a:first-child:after{display:none}.et_fullwidth_nav #top-menu li.mega-menu>ul{width:auto;left:30px!important;right:30px!important}.et_mobile_menu{position:absolute;left:0;padding:5%;background:#fff;width:100%;visibility:visible;opacity:1;display:none;z-index:9999;border-top:3px solid #2ea3f2;box-shadow:0 2px 5px rgba(0,0,0,.1);-moz-box-shadow:0 2px 5px rgba(0,0,0,.1);-webkit-box-shadow:0 2px 5px rgba(0,0,0,.1)}#main-header .et_mobile_menu li ul,.et_pb_fullwidth_menu .et_mobile_menu li ul,.et_pb_menu .et_mobile_menu li ul{visibility:visible!important;display:block!important;padding-left:10px}.et_mobile_menu li li{padding-left:5%}.et_mobile_menu li a{border-bottom:1px solid rgba(0,0,0,.03);color:#666;padding:10px 5%;display:block}.et_mobile_menu .menu-item-has-children>a{font-weight:700;background-color:rgba(0,0,0,.03)}.et_mobile_menu li .menu-item-has-children>a{background-color:transparent}.et_mobile_nav_menu{float:right;display:none}.mobile_menu_bar{position:relative;display:block;line-height:0}.mobile_menu_bar:before{content:"a";font-size:32px;position:relative;left:0;top:0;cursor:pointer}.et_pb_module .mobile_menu_bar:before{top:2px}.mobile_nav .select_page{display:none}
+</style>
+<link rel='preload' id='extra-dynamic-late-css' href='https://www.cienciaoberta.cat/wp-content/et-cache/7329/et-extra-dynamic-7329-late.css?ver=1676841682' as='style' media='all' onload="this.onload=null;this.rel='stylesheet'" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Titillium%20Web&#038;display=swap&#038;ver=1673180200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium%20Web&#038;display=swap&#038;ver=1673180200" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium%20Web&#038;display=swap&#038;ver=1673180200" /></noscript><link rel='stylesheet' id='extra-style-css' href='https://www.cienciaoberta.cat/wp-content/themes/Extra-child/style.css?ver=4.20.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='jquery-js-after'>
+jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});
+</script>
+<script type='text/javascript' id='cookie-law-info-js-extra'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#FFF","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#3e5062","button_1_button_hover":"#32404e","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#317c89","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#3f5062","button_3_button_hover":"#32404e","button_3_link_colour":"#fff","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#fff","button_4_as_button":"1","button_7_button_colour":"#3f5062","button_7_button_hover":"#32404e","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#464646","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"};
+var log_object = {"ajax_url":"https:\/\/www.cienciaoberta.cat\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/plugins/cookie-law-info/legacy/public/js/cookie-law-info-public.js?ver=3.0.8' id='cookie-law-info-js'></script>
+<script type='text/javascript' id='sow-accordion-js-extra'>
+/* <![CDATA[ */
+var sowAccordion = {"scrollto_after_change":"1","scrollto_offset":"80"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/plugins/so-widgets-bundle/widgets/accordion/js/accordion.min.js?ver=1.46.5' id='sow-accordion-js'></script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=4.7.0' id='ppress-flatpickr-js'></script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=4.7.0' id='ppress-select2-js'></script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/plugins/wp-quicklatex/js/wp-quicklatex-frontend.js?ver=1.0' id='wp-quicklatex-frontend-js'></script>
+<link rel="https://api.w.org/" href="https://www.cienciaoberta.cat/wp-json/" /><link rel="alternate" type="application/json" href="https://www.cienciaoberta.cat/wp-json/wp/v2/posts/7329" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.cienciaoberta.cat/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.cienciaoberta.cat/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<link rel='shortlink' href='https://www.cienciaoberta.cat/?p=7329' />
+<link rel="alternate" type="application/json+oembed" href="https://www.cienciaoberta.cat/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cienciaoberta.cat%2Fmonty%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.cienciaoberta.cat/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cienciaoberta.cat%2Fmonty%2F&#038;format=xml" />
+<meta name="generator" content="Redux 4.3.21.2" /><style type="text/css">.wtr-time-wrap{ 
+	/* wraps the entire label */
+	margin: 0 10px;
+
+}
+.wtr-time-number{ 
+	/* applies only to the number */
+	
+}</style><style type="text/css" id="et-bloom-custom-css">
+					.et_bloom .et_bloom_optin_6 .et_bloom_form_content { background-color: #f5f5f5 !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_container .et_bloom_form_header { background-color: #ffffff !important; } .et_bloom .et_bloom_optin_6 .et_bloom_header_outer { background-color: #ffffff !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_content button { background-color: #ffffff !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_content .et_bloom_fields i { color: #ffffff !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_content .et_bloom_custom_field_radio i:before { background: #ffffff !important; } .et_bloom .et_bloom_optin_6 .breakout_edge.et_bloom_border_dashed .et_bloom_form_header { border-color: #afb1af !important } .et_bloom .et_bloom_optin_6 .et_bloom_form_content button { background-color: #ffffff !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_container h2, .et_bloom .et_bloom_optin_6 .et_bloom_form_container h2 span, .et_bloom .et_bloom_optin_6 .et_bloom_form_container h2 strong { font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif; }.et_bloom .et_bloom_optin_6 .et_bloom_form_container p, .et_bloom .et_bloom_optin_6 .et_bloom_form_container p span, .et_bloom .et_bloom_optin_6 .et_bloom_form_container p strong, .et_bloom .et_bloom_optin_6 .et_bloom_form_container form input, .et_bloom .et_bloom_optin_6 .et_bloom_form_container form button span { font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif; } 
+				</style><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" /><style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><link rel="icon" href="https://www.cienciaoberta.cat/wp-content/uploads/2022/01/cropped-Ig-Logo-2-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.cienciaoberta.cat/wp-content/uploads/2022/01/cropped-Ig-Logo-2-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.cienciaoberta.cat/wp-content/uploads/2022/01/cropped-Ig-Logo-2-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.cienciaoberta.cat/wp-content/uploads/2022/01/cropped-Ig-Logo-2-270x270.png" />
+<style id="et-extra-customizer-global-cached-inline-styles">#main-content .container,.boxed_layout #page-container,.boxed_layout,.boxed_layout.et_fixed_nav .et-fixed-header #main-header{max-width:1100px}@media only screen and (min-width:1025px){.with_sidebar .et_pb_extra_column_sidebar{min-width:29%;max-width:29%;width:29%;flex-basis:29%}.with_sidebar .et_pb_extra_column_main{min-width:71%;max-width:71%;width:71%;flex-basis:71%}}.widget_et_recent_tweets .widget_list a,.widget_et_recent_tweets .et-extra-icon,.widget_et_recent_tweets .widget-footer .et-extra-social-icon,.widget_et_recent_tweets .widget-footer .et-extra-social-icon::before,.project-details .project-details-title,.et_filterable_portfolio .filterable_portfolio_filter a.current,.et_extra_layout .et_pb_extra_column_main .et_pb_column .module-head h1,.et_pb_extra_column .module-head h1,#portfolio_filter a.current,.woocommerce div.product div.summary .product_meta a,.woocommerce-page div.product div.summary .product_meta a,.et_pb_widget.woocommerce .product_list_widget li .amount,.et_pb_widget li a:hover,.et_pb_widget.woocommerce .product_list_widget li a:hover,.et_pb_widget.widget_et_recent_videos .widget_list .title:hover,.et_pb_widget.widget_et_recent_videos .widget_list .title.active,.woocommerce .woocommerce-info:before{color:#3e5062}.single .score-bar,.widget_et_recent_reviews .review-breakdowns .score-bar,.et_pb_extra_module .posts-list article .post-thumbnail,.et_extra_other_module .posts-list article .post-thumbnail,.et_pb_widget .widget_list_portrait,.et_pb_widget .widget_list_thumbnail,.quote-format,.link-format,.audio-format .audio-wrapper,.paginated .pagination li.active,.score-bar,.review-summary-score-box,.post-footer .rating-stars #rating-stars img.star-on,.post-footer .rating-stars #rated-stars img.star-on,.author-box-module .author-box-avatar,.timeline-menu li.active a:before,.woocommerce div.product form.cart .button,.woocommerce div.product form.cart .button.disabled,.woocommerce div.product form.cart .button.disabled:hover,.woocommerce-page div.product form.cart .button,.woocommerce-page div.product form.cart .button.disabled,.woocommerce-page div.product form.cart .button.disabled:hover,.woocommerce div.product form.cart .read-more-button,.woocommerce-page div.product form.cart .read-more-button,.woocommerce div.product form.cart .post-nav .nav-links .button,.woocommerce-page div.product form.cart .post-nav .nav-links .button,.woocommerce .woocommerce-message,.woocommerce-page .woocommerce-message{background-color:#3e5062}#et-menu>li>ul,#et-menu li>ul,#et-menu>li>ul>li>ul,.et-top-search-primary-menu-item .et-top-search,.et_pb_module,.module,.page article,.authors-page .page,#timeline-sticky-header,.et_extra_other_module,.woocommerce .woocommerce-info{border-color:#3e5062}h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-size:30px}body{font-size:17px}h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:normal;font-style:normal;text-transform:none;text-decoration:none}h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-family:'Titillium Web',Helvetica,Arial,Lucida,sans-serif}body{font-family:'Titillium Web',Helvetica,Arial,Lucida,sans-serif}a,a:visited,.post-content a,.et_pb_pagebuilder_layout .et_pb_blurb_container p a,.et_pb_pagebuilder_layout .et_pb_code a,.et_pb_pagebuilder_layout .et_pb_promo_description a,.et_pb_pagebuilder_layout .et_pb_newsletter_description a,.et_pb_pagebuilder_layout .et_pb_team_member_description>a,.et_pb_pagebuilder_layout .et_pb_pricing li a,.et_pb_pagebuilder_layout .et_pb_slide_content a,.et_pb_pagebuilder_layout .et_pb_tab a,.et_pb_pagebuilder_layout .et_pb_text a,.et_pb_pagebuilder_layout .et_pb_toggle_content a,.et_pb_pagebuilder_layout .et_pb_fullwidth_code a{color:#317c89}body{color:#464646}h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#464646}#page-container{background-color:#f0f0f0}#et-menu li a{font-size:17px}#et-menu li{font-family:'Titillium Web',Helvetica,Arial,Lucida,sans-serif}#et-navigation ul li,#et-navigation li a,#et-navigation>ul>li>a{font-weight:600;font-style:normal;text-transform:none;text-decoration:none}#et-menu>li a,#et-menu>li.menu-item-has-children>a:after,#et-menu>li.mega-menu-featured>a:after,#et-extra-mobile-menu>li.mega-menu-featured>a:after{color:rgba(255,255,255,0.85)}#main-header{background-color:#1d2633}#et-menu li>ul li a,#et-menu li.mega-menu>ul>li>a,#et-menu .sub-menu li.mega-menu-featured>a:after,#et-menu .sub-menu li.menu-item-has-children>a:after,#et-extra-mobile-menu .sub-menu li.mega-menu-featured>a:after,#et-extra-mobile-menu li a,#et-menu li.mega-menu-featured>ul li .title,#et-extra-mobile-menu li.mega-menu-featured>ul li .title,#et-menu li.mega-menu-featured>ul li .featured-post h2,#et-extra-mobile-menu li.mega-menu-featured>ul li .featured-post h2,#et-menu li.mega-menu-featured>ul li .featured-post .post-meta a,#et-extra-mobile-menu li.mega-menu-featured>ul li .featured-post .post-meta a,#et-menu li.mega-menu-featured>ul li.menu-item .recent-list .recent-post .post-content .post-meta,#et-extra-mobile-menu li.mega-menu-featured>ul li.menu-item .recent-list .recent-post .post-content .post-meta,#et-menu li.mega-menu-featured>ul li.menu-item .recent-list .recent-post .post-content .post-meta a,#et-extra-mobile-menu li.mega-menu-featured>ul li.menu-item .recent-list .recent-post .post-content .post-meta a{color:rgba(255,255,255,0.76)}#et-info .et-cart,#et-info .et-cart:before,#et-info .et-top-search .et-search-field,#et-info .et-top-search .et-search-submit:before{font-size:16.000000px}#et-info .et-extra-social-icons .et-extra-icon{font-size:21.000000px;line-height:40.000000px;width:40.000000px;height:40.000000px}#et-info .et-cart{padding:12.000000px 13.333333px}#et-info .et-top-search .et-search-field{padding:9.000000px 13.333333px}#et-info .et-top-search .et-search-field{width:160.000000px}#et-info .et-top-search .et-search-submit:before{margin-top:-8.000000px}#et-info .et-cart span,#et-info .et-top-search .et-search-field{font-family:'Titillium Web',Helvetica,Arial,Lucida,sans-serif}.et-fixed-header #et-menu>li a,.et-fixed-header #et-menu>li.menu-item-has-children>a:after,.et-fixed-header #et-menu>li.mega-menu-featured>a:after,.et-fixed-header #et-extra-mobile-menu>li.mega-menu-featured>a:after{color:rgba(255,255,255,0.91)}#footer-bottom{background-color:#293844}#footer-info,#footer-info a{color:#ffffff}#footer-info a{font-weight:bold;font-style:normal;text-transform:none;text-decoration:none}#footer #footer-bottom #footer-nav ul.et-extra-social-icons .et-extra-icon{font-size:18px}#footer #footer-bottom #footer-nav ul.et-extra-social-icons .et-extra-icon{line-height:18px}#footer #footer-bottom #footer-nav ul.et-extra-social-icons .et-extra-icon{height:18px}#footer #footer-bottom #footer-nav ul.et-extra-social-icons .et-extra-icon{width:18px}.comment_avatar img{border-radius:50%}.comment{padding-bottom:50px}.comment_area .comment-reply-link{top:auto;bottom:-45px;padding:4px 10px;font-size:20px}@media (min-width:768px){.children .comment.depth-2{margin-left:30px}.comment .children{margin-left:0px}.comment .children .comment_avatar img{max-width:60px}.comment .children .comment_avatar{margin-left:20px}}@media (max-width:767px){.comment-reply-link{bottom:-20px!important;top:auto!important}.comment_area{padding-bottom:40px}.comment_avatar{max-width:50px}.comment_postinfo,.comment-content.clearfix{margin-left:-30px}}h1{font-size:34px;font-weight:400}h3{font-size:24px;line-height:32px}h4{font-size:24px;line-height:28px}.cta{color:#ffffff;font-family:Titillium Web;letter-spacing:1px}.cta a{background:#414c56;font-family:Titillium Web;letter-spacing:1px;color:#ffffff!important;padding:5px 10px;display:inline-block;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;font-weight:700!important;transition:all 0.5s}.cta a:hover{background:#566068;color:#fff!important}body.single-post .post-footer{display:none}body.single-post .post-nav{display:none}</style><style id="wtr_settings-dynamic-css" title="dynamic-css" class="redux-options-output">.wtr-time-wrap{font-family:"Titillium Web";text-align:center;line-height:1,7px;font-weight:normal;font-style:normal;color:#939393;font-size:17px;font-display:swap;}</style></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-7329 single-format-standard et_bloom et_extra et_fullwidth_secondary_nav et_non_fixed_nav et_pb_gutters3 et_primary_nav_dropdown_animation_fadeInTop et_secondary_nav_dropdown_animation_Default with_sidebar with_sidebar_right et_includes_sidebar et-db">
+	<div id="page-container" class="page-container">
+				<!-- Header -->
+		<header class="header left-right">
+						<!-- #top-header -->
+			<div id="top-header" style="">
+				<div class="container">
+
+					<!-- Secondary Nav -->
+										<div class="cta"> Tu dones ales al projecte - <a href="https://cienciaoberta.aixeta.cat/ca/subscriptions">Micromecenatge</a></div>	
+						<div id="et-secondary-nav" class="">
+												</div>
+					
+					<!-- #et-info -->
+					<div id="et-info">
+
+						
+						<!-- .et-extra-social-icons -->
+						<ul class="et-extra-social-icons" style="">
+																																																																													<li class="et-extra-social-icon twitter">
+									<a href="https://twitter.com/cienciaoberta" class="et-extra-icon et-extra-icon-background-hover et-extra-icon-twitter"></a>
+								</li>
+																																																																																																																																																																																																										<li class="et-extra-social-icon instagram">
+									<a href="https://www.instagram.com/cienciaoberta/" class="et-extra-icon et-extra-icon-background-hover et-extra-icon-instagram"></a>
+								</li>
+																																																																																																																																																																																																																																																																																																																																																																																																																																								</ul>
+						
+						<!-- .et-top-search -->
+												<div class="et-top-search" style="">
+							<form role="search" class="et-search-form" method="get" action="https://www.cienciaoberta.cat/">
+			<input type="search" class="et-search-field" placeholder="Cerca..." value="" name="s" title="Cercar:" />
+			<button class="et-search-submit"></button>
+		</form>						</div>
+						
+						<!-- cart -->
+											</div>
+				</div><!-- /.container -->
+			</div><!-- /#top-header -->
+
+			
+			<!-- Main Header -->
+			<div id="main-header-wrapper">
+				<div id="main-header" data-fixed-height="80">
+					<div class="container">
+					<!-- ET Ad -->
+						
+						
+						<!-- Logo -->
+						<a class="logo" href="https://www.cienciaoberta.cat/" data-fixed-height="51">
+							<img src="https://www.cienciaoberta.cat/wp-content/uploads/2022/03/Targeta-CO-1.png" alt="Ciència Oberta" id="logo" />
+						</a>
+
+						
+						<!-- ET Navigation -->
+						<div id="et-navigation" class="">
+							<ul id="et-menu" class="nav"><li id="menu-item-9031" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-9031"><a href="https://www.cienciaoberta.cat/">Continguts de Ciència Oberta</a>
+<ul class="sub-menu">
+	<li id="menu-item-9060" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-9060"><a href="https://www.cienciaoberta.cat/reportatges/">Reportatges</a></li>
+	<li id="menu-item-9037" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9037"><a href="https://www.cienciaoberta.cat/experiencies/">Experiències</a></li>
+	<li id="menu-item-9039" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9039"><a href="https://www.cienciaoberta.cat/recercat/">RecerCA&#8217;T</a></li>
+	<li id="menu-item-9740" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9740"><a href="https://www.cienciaoberta.cat/ressenyes/">Ressenyes</a></li>
+	<li id="menu-item-9038" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9038"><a href="https://www.cienciaoberta.cat/contes/">Contes</a></li>
+	<li id="menu-item-9040" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9040"><a href="https://www.cienciaoberta.cat/laboratori/">Laboratori</a></li>
+</ul>
+</li>
+<li id="menu-item-9354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9354"><a href="https://www.cienciaoberta.cat/concurs/">Concurs</a></li>
+<li id="menu-item-9438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9438"><a href="https://www.cienciaoberta.cat/projecte/">Què és Ciència Oberta?</a>
+<ul class="sub-menu">
+	<li id="menu-item-9036" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9036"><a href="https://www.cienciaoberta.cat/projecte/">Sobre el projecte</a></li>
+	<li id="menu-item-9032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9032"><a href="https://www.cienciaoberta.cat/equip/">Equip</a></li>
+	<li id="menu-item-9041" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9041"><a href="https://cienciaoberta.aixeta.cat/ca/subscriptions">Micromecenatge</a></li>
+	<li id="menu-item-9033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9033"><a href="https://www.cienciaoberta.cat/contacte/">Contacte</a></li>
+	<li id="menu-item-9035" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9035"><a href="https://www.cienciaoberta.cat/agraiments/">Agraïments</a></li>
+</ul>
+</li>
+<li id="menu-item-9042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9042"><a href="https://www.cienciaoberta.cat/neurones/">Neurones Fregides</a></li>
+</ul>							<div id="et-mobile-navigation">
+			<span class="show-menu">
+				<div class="show-menu-button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<p>Seleccionar página</p>
+			</span>
+			<nav>
+			</nav>
+		</div> <!-- /#et-mobile-navigation -->						</div><!-- /#et-navigation -->
+					</div><!-- /.container -->
+				</div><!-- /#main-header -->
+			</div><!-- /#main-header-wrapper -->
+
+		</header>
+
+				<div id="main-content">
+		<div class="container">
+		<div id="content-area" class="clearfix">
+			<div class="et_pb_extra_column_main">
+																<article id="post-7329" class="module single-post-module post-7329 post type-post status-publish format-standard has-post-thumbnail hentry category-fisica-mates tag-concurs tag-cotxe tag-marilyn-vos-savant tag-monty-hall tag-portes tag-presentador tag-probabilitat et-has-post-format-content et_post_format-et-post-format-standard">
+														<div class="post-header">
+								<h1 class="entry-title">El problema de Monty Hall<span class="wtr-time-wrap block after-title"><span class="wtr-time-number">5</span> min de lectura</span></h1>
+								<div class="post-meta vcard">
+									<p>Publicat per <a href="https://www.cienciaoberta.cat/equip/quim/" class="url fn" title="Entrades de Quim Frigola Casals" rel="author">Quim Frigola Casals</a> | <span class="updated">juny 20, 2021</span> | <a href="https://www.cienciaoberta.cat/reportatges/fisica-mates/" rel="tag">Física i matemàtiques</a></p>
+								</div>
+							</div>
+							
+														<div class="post-thumbnail header">
+								<img src="https://www.cienciaoberta.cat/wp-content/uploads/2021/06/Portada-948x640-1.jpg" alt="El problema de Monty Hall&lt;span class=&quot;wtr-time-wrap block after-title&quot;&gt;&lt;span class=&quot;wtr-time-number&quot;&gt;5&lt;/span&gt; min de lectura&lt;/span&gt;" />							</div>
+							
+														
+							<div class="post-wrap">
+															<div class="post-content entry-content">
+									<div id="wtr-content" 
+	    	data-bg="#FFFFFF" 
+	    	data-fg="#317c89" 
+	    	data-width="5" 
+	    	data-mute="0" 
+	    	data-fgopacity="0.5" 
+	    	data-mutedopacity="0.5" 
+	    	data-placement="top" 
+	    	data-placement-offset="0" 
+	    	data-content-offset="0" 
+	    	data-placement-touch="left" 
+		    data-placement-offset-touch="0" 
+	    	data-transparent="" 
+	    	data-shadow="1" 
+	    	data-touch="0" 
+	    	data-non-touch="1" 
+	    	data-comments="0" 
+	    	data-commentsbg="#317c89" 
+	    	data-location="page" 
+	    	data-mutedfg="#317c89" 
+	    	data-endfg="#317c89" 
+	    	data-rtl="" 
+	    	>
+<p class="has-drop-cap">Imagina que estàs en un concurs televisiu, d’aquells que fan al vespre. Et trobes davant de <strong>tres portes tancades</strong>. De les tres, dues amaguen una cabra i només una té un cotxe —nou a estrenar darrere—, però tu no saps en quina es troba cada cosa. <strong>Esculls una porta: si hi ha el cotxe, te’l quedes; si no, te’n vas a casa amb les mans buides</strong>. En aquest moment, el presentador —<strong>que sap on es troba el cotxe</strong>— <strong>obre una de les altres dues portes</strong> on hi ha una cabra i et demana <strong>“Vols canviar a la tercera porta?”</strong>.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img decoding="async" src="https://lh3.googleusercontent.com/Ww11jaGz4cIgBnSswG9-aVp6T05vr0TuVY6gywFqUaZXL0E8K5d1KsXwYEnOCnXa48rs4IEMFkBWeKBSpZzrwTBE0Xd9Lb71CxHPgOIfvr3fGnveRS3han6JJ64WjacFLL_Dhw9b" alt="" width="547" height="307"/><figcaption>1. <em>Tries la primera porta, llavors, el presentador obra la tercera, on hi ha una cabra.</em></figcaption></figure></div>
+
+
+
+<p>Què faries? Canviar o quedar-te amb la porta que ja havies escollit? Què s’ha de fer per tenir més possibilitats de guanyar: canviar de porta, quedar-se amb l’escollida o realment és igual, perquè hi ha les mateixes possibilitats?</p>
+
+
+
+<h2>Monty qui?</h2>
+
+
+
+<p>Aquest problema està basat en un concurs americà dels anys 60 anomenat “<strong><em>Let’s Make a Deal”, </em></strong><strong>presentat per Monty Hall</strong>. Durant el concurs, Monty Hall posava els concursants davant les tres portes i els feia la maleïda pregunta: “Voleu canviar?”.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img decoding="async" loading="lazy" src="https://lh4.googleusercontent.com/Uz-mtiYacdw8GpHSNq6gMH_XSdoczQfxVAXuMtvkG-Uuu6mitKO6o76mkqQCYaf68abRzGsN0Dfi0zeFzd1J3YYQinRABIJt_3-zcth5pJVDokw1M3gwp8qHumgb2q8U1-qGYGJe" alt="" width="206" height="269"/><figcaption>2. <em>Monty Hall</em>.</figcaption></figure></div>
+
+
+
+<p>Això no obstant, no va ser fins a l’any 1990 que el problema no es va fer famós, quan un lector de la revista <em>Parade</em> va formular la pregunta a<strong> l’articulista Marilyn vos Savant</strong>. Ella <strong>va publicar la solució correcta. </strong>En les setmanes següents va rebre més de 10.000 cartes dient-li que no podia estar més equivocada. Inclús matemàtics i físics reputats van escriure-li —fins i tot insultant-la— per dir-li que havia donat una solució errònia. Finalment, es va demostrar que els equivocats eren ells. Alguns, fins i tot, es van haver de disculpar públicament.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img decoding="async" loading="lazy" src="https://lh6.googleusercontent.com/307CNJWjO_t4uiTDkcip3SkgwQsLyvX15-tWEiQQrbXEMSpOF0MsSb8gnvH84LKoIUjW-arZYkw-CDHkeG_qvCBvtnOB8nL9QAf8jDNlrFNt7G7gMTy9IccD0eVdUYf3ane7dQl3" alt="" width="255" height="255"/><figcaption>3. <em>Marilyn vos Savant.</em></figcaption></figure></div>
+
+
+
+<h2>Però, quina és la solució?</h2>
+
+
+
+<p>La majoria de gent pensa que és igual canviar o no de porta, que les dues que queden al final tenen la mateixa probabilitat de tenir el cotxe: un 50% cada una. Tanmateix, això no és cert, ja que estem obviant un fet clau: el presentador sap on és el cotxe i ho està tenint en compte a l’obrir la porta. <strong>Així, si canvies de porta, tens més probabilitat de guanyar.</strong></p>
+
+
+
+<p>Vegem-ho: quan tu tries una porta al principi hi ha <strong>1 possibilitat entre 3 que el cotxe estigui a la porta que has escollit,</strong> és a dir, hi ha un 33% de probabilitat. <strong>Dit d&#8217;una altra manera, hi ha un 66% de possibilitats (2 entre 3) que el cotxe estigui a alguna de les altres dues portes.</strong> Quan en Monty obre una de les dues portes restants és com <strong>si t’estigués donant a elegir entre la porta que havies triat i les altres dues juntes</strong>.</p>
+
+
+
+<p>Però per què? Doncs perquè la probabilitat de les dues portes es condensa en la que no havies triat: Les dues portes tenien un 66% de probabilitats de tenir el cotxe, aleshores quan en Monty n’obre una que conté una cabra, aquest 66% de probabilitat passa únicament a la que ningú ha triat, ja que a la del Monty ja sabem que hi havia una cabra!</p>
+
+
+
+<p>És a dir, <strong>canviant de porta tens un 66% de probabilitat de guanyar</strong> mentre que si no ho fas tens només un 33% de probabilitat. És clar que no guanyaràs sempre en canviar! Però fer-ho és una millor estratègia, ja que 2 de cada 3 vegades guanyaràs el cotxe.</p>
+
+
+
+<h2>No m’ho crec!</h2>
+
+
+
+<p>Arribats a aquest punt hi ha molta gent que encara no ho té clar. Una bona manera de comprovar-ho és estudiant-ne tots els casos. <strong>Suposem que tries la porta número 1</strong>. En aquest cas hi ha 3 possibilitats: que el cotxe estigui a la porta 1, a la 2 o a la 3. Veiem què passa en cada cas:</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Tries la porta:</strong></td><td><strong>El cotxe és a la porta:</strong></td><td><strong>El presentador obre la porta:</strong></td><td><strong>Si no canvies</strong></td><td><strong>Si canvies</strong></td></tr><tr><td>1</td><td>1</td><td>La 2 o la 3</td><td>Guanyes</td><td>Perds</td></tr><tr><td>1</td><td>2</td><td>La 3</td><td>Perds</td><td>Guanyes</td></tr><tr><td>1</td><td>3</td><td>La 2</td><td>Perds</td><td>Guanyes</td></tr></tbody></table></figure>
+
+
+
+<p>Es veu clarament com, <strong>canviant de porta, guanyes en 2 dels 3 casos possibles</strong>. Fixeu-vos, però, com és d’important que la condició que el presentador sap on és el cotxe i no obre aquella porta! Aquesta informació és la que, a l’afegir-se al sistema, fa que la probabilitat de la porta que obra el presentador quedi absorbida per la darrera.&nbsp;</p>
+
+
+
+<h2>Encara no ho veig&#8230;</h2>
+
+
+
+<p>Fem el mateix però un cas molt més exagerat. Imagina que et trobes davant de 100 portes on, en una de les quals hi ha un cotxe i a la resta, cabres. En tries una i tot seguit, el presentador —que sap on és el cotxe—<strong> n’obra 98 on hi havia cabres</strong>. Només deixa tancada la porta que tu has escollit i una altra. En aquest cas, canviaries?</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter is-resized"><img decoding="async" loading="lazy" src="https://lh5.googleusercontent.com/HxEnABoLgy7ptzGTlZfbn6Fq79GdyyWt3FEaUpBZnWb-t6aAgQrjRbAhgz9L5AlHClQjv-69YDnCT-1aiv3NA82lbAZKgwD3Tp3NZGwV5NC_z7Sa8arlwe-kFyeNlIKowHthSk_u" alt="" width="647" height="364"/><figcaption>4. <em>De les 100 portes, tries la número 17. Llavors el presentador n’obre 98, deixant tancada la que has escollit i la número 94.</em></figcaption></figure></div>
+
+
+
+<p>Pensa-ho, la porta que tu has triat només tenia 1 entre 100 possibilitats de tenir el cotxe, un 1%! Mentre que a les altres 99 hi ha un 99% de probabilitat que tinguin el cotxe. A l’obrir-les totes 99 menys una, aquesta probabilitat hi continua essent, només que sabem que a les 98 obertes hi havia una cabra. Per tant, tota aquesta probabilitat s’ha <em>condensat </em>en la porta que el presentador ha deixat tancada.</p>
+
+
+
+<h2>Jo no hauria canviat!</h2>
+
+
+
+<p>No et preocupis, no estàs sol! Un estudi amb 228 persones va observar que <strong>només al voltant d’un 13% de la gent canviava</strong> de porta quan se li presentava el problema. I a més, la majoria de gent insisteix en no canviar quan se li repeteix el problema. És a dir, <strong>no ens adonem que perdem més cops dels que guanyem, </strong>al contrari del que ens diu la nostra intuïció: que canviant o no canviant tens les mateixes probabilitats de guanyar.</p>
+
+
+
+<p>Per contra, fent l’estudi a<strong> coloms</strong> —amb alguna llavor en lloc del cotxe— es va veure que amb unes poques repeticions <strong>aprenien que era millor canviar </strong>de porta que no pas quedar-se amb la que havien escollit al principi, i així guanyar el premi més vegades en total.</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<h3>Ja per acabar…</h3>
+
+
+
+<p>Psicològicament hi ha diverses teories sobre per què els humans tendim a equivocar-nos repetidament en aquest problema. Una&nbsp; d’elles afirma que és una combinació del <strong>biaix de l’</strong><strong><em>statu quo</em></strong> —o la preferència dels humans a mantenir les coses com estan— i el fet que la <strong>gent prefereix cometre un error per inacció a equivocar-se actuant</strong>.</p>
+
+
+
+<p>Amb aquest problema hem vist que les nostres creences no sempre són certes, inclús les que semblen més evidents i que tenim interioritzades. Així doncs, sempre va bé qüestionar-se la intuïció i no actuar per inèrcia!</p>
+
+
+
+<h3>Per saber-ne més </h3>
+
+
+
+<p class="has-background" style="background-color:#eeeeee"><strong><strong><strong>Numberphile </strong>&#8211;<a href="https://www.youtube.com/watch?v=ugbWqWCcxrg&amp;t=152s"> </a></strong></strong><a href="https://www.youtube.com/watch?v=ugbWqWCcxrg&amp;t=152s" target="_blank" rel="noreferrer noopener">Monty Hall Problem (extended math version)</a></p>
+
+
+
+<p class="has-background" style="background-color:#eeeeee"><strong><strong><strong>Viquipèdia </strong>&#8211; </strong></strong><a href="https://ca.wikipedia.org/wiki/Marilyn_vos_Savant" target="_blank" rel="noreferrer noopener">Marilyn vos Savant</a></p>
+
+
+
+<p class="has-background" style="background-color:#eeeeee"><strong><strong><strong>La Sexta Divulgación </strong>&#8211; </strong></strong><a href="https://www.lasexta.com/tecnologia-tecnoxplora/ciencia/divulgacion/son-palomas-mas-listas-que-nosotros_2015061657fcce940cf2a2e945ba6ac7.html" target="_blank" rel="noreferrer noopener">¿Son las palomas más listas que nosotros?</a></p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p>2. Extreta de <em><a href="https://commons.wikimedia.org/wiki/File:Monty_hall_abc_tv.JPG" target="_blank" rel="noreferrer noopener">Wikimedia Commons</a></em>.</p>
+
+
+
+<p>3. Extreta de la <a href="https://web.archive.org/web/20230215064656/https://parade.com/" target="_blank" rel="noreferrer noopener">revista Parade</a>.</p>
+</div><span class="et_bloom_bottom_trigger"></span>																	</div>
+														</div>
+														<div class="post-footer">
+								<div class="social-icons ed-social-share-icons">
+									<p class="share-title">Compartir:</p>
+																	</div>
+																<style type="text/css" id="rating-stars">
+									.post-footer .rating-stars #rated-stars img.star-on,
+									.post-footer .rating-stars #rating-stars img.star-on {
+										background-color: #e8533b;
+									}
+								</style>
+							</div>
+
+																				</article>
+
+						<nav class="post-nav">
+							<div class="nav-links clearfix">
+								<div class="nav-link nav-link-prev">
+									<a href="https://www.cienciaoberta.cat/gps/" rel="prev"><span class="button">Anterior</span> <span class="title">El GPS: com sap el teu telèfon mòbil exactament on ets?</span></a>								</div>
+								<div class="nav-link nav-link-next">
+									<a href="https://www.cienciaoberta.cat/patrons/" rel="next"><span class="button">Següent</span> <span class="title">Desxifrant els patrons de les zebres</span></a>								</div>
+							</div>
+						</nav>
+												<div class="et_extra_other_module author-box vcard">
+							<div class="author-box-header">
+								<h3>Sobre l&#039;Autor/a</h3>
+							</div>
+							<div class="author-box-content clearfix">
+								<div class="author-box-avatar">
+									<img data-del="avatar" alt="Quim Frigola Casals" src='https://www.cienciaoberta.cat/wp-content/uploads/2020/10/Quim-Frigola-300x300.jpg' class='avatar pp-user-avatar avatar-170 photo ' height='170' width='170'/>								</div>
+								<div class="author-box-description">
+									<h4><a class="author-link url fn" href="https://www.cienciaoberta.cat/equip/quim/" rel="author" title="Veure totes les publicacions de Quim Frigola Casals">Quim Frigola Casals</a></h4>
+									<p class="note">Des d'un petit poble al peu del Montseny vaig descobrir que m'agradaven dues coses; saber com funcionava el que hi havia al meu entorn i poder-ho explicar als altres. Així, les meves preguntes van anar augmentant fins que vaig tenir clar que em volia dedicar a la ciència.
+
+Finalment, vaig acabar estudiant Física i Matemàtiques a la Universitat Autònoma de Barcelona, descobrint la meva gran passió; les matemàtiques. Des de llavors, que exploro aquest món meravellós que hi ha darrere els patrons de la natura i intento transmetre aquesta passió als que m'envolten.</p>
+									<ul class="social-icons">
+																			</ul>
+								</div>
+							</div>
+						</div>
+						
+										
+				<!-- You can start editing here. -->
+
+<section id="comment-wrap">
+			<div id="comments" class="nocomments">
+			 <!-- If comments are open, but there are no comments. -->
+
+					</div>
+					<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><span>Deixa-hi un comentari</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/monty/#respond" style="display:none;">Cancel·la les respostes</a></small></h3><form action="https://www.cienciaoberta.cat/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">L'adreça electrònica no es publicarà.</span> <span class="required-field-message">Els camps necessaris estan marcats amb <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">COMENTARI</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p><p class="comment-form-author"><label for="author">Nom <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">Correu electrònic <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Lloc web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+    <style type="text/css">
+        #gdpr-comments-compliance > div { margin: 1rem 0; }
+        #gdpr-comments-checkbox-wrap { display: flex; align-items: baseline; }
+        #gdpr-comments-checkbox + label { display: inline; margin: 0; }
+        #gdpr-comments-compliance-text { font-size: .8em; }
+    </style>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function( $ ) {
+
+            var submitCommentButton = $('#commentform input#submit');
+            var commentCheckbox = $('#gdpr-comments-checkbox');
+
+            // Disable button by default
+            submitCommentButton.prop( "disabled", true );
+
+            // Handle checkbox actions
+            commentCheckbox.change(function(){
+
+                if ( this.checked ) {
+                    submitCommentButton.prop( "disabled", false );
+                } else {
+                    submitCommentButton.prop( "disabled", true );
+
+                }
+            });
+
+        });
+    </script>
+        <div id="gdpr-comments-compliance">
+        <!-- Label -->
+                <!-- Checkbox -->
+                    <div id="gdpr-comments-checkbox-wrap">
+                <input id="gdpr-comments-checkbox" type="checkbox" name="gdpr_comments_checkbox" value="1" required="required" />
+                <label for="gdpr-comments-checkbox">He llegit i accepto la Política de Privacitat</label>
+            </div>
+                <!-- Text -->
+                    <div id="gdpr-comments-compliance-text">
+                Quan omplis aquest formulari, estàs donant el teu <strong>consentiment exprés</strong> al tractament de les teves dades d’acord amb el <strong>Reglament General de Protecció de Dades (</strong><strong><span class="hiddenSpellError">RGPD</span>).</strong>
+
+T’informem que el <strong>responsable</strong> d’aquest blog és en Marc Canela, president de l'associació. La <strong>finalitat</strong> d’aquest és enviar informació sobre nous reportatges i articles, sempre amb la <strong>legitimació</strong> del teu consentiment atorgat en el formulari.
+
+El <strong>destinatari</strong> de les teves dades és <span class="hiddenSpellError">SW</span> <span class="hiddenSpellError">Hosting</span> (<span class="hiddenGrammarError">el hosting</span> d’aquest blog, situat a Fornells de la Selva) i podràs exercir els teus <strong>drets</strong> d’accés, rectificació, limitació o supressió de les teves dades. Per més informació pots donar un cop d’ull a la <a href="https://www.cienciaoberta.cat/politica-de-privacitat/" target="_blank" rel="noopener noreferrer">Política de Privacitat</a>.            </div>
+            </div>
+
+    <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Publica el meu comentari" /> <input type='hidden' name='comment_post_ID' value='7329' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f615b337ed" /></p><p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="232"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+	<p class="akismet_comment_form_privacy_notice">Aquest lloc utilitza Akismet per reduir els comentaris brossa. <a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener">Apreneu com es processen les dades dels comentaris</a>.</p>	</section>
+			</div><!-- /.et_pb_extra_column.et_pb_extra_column_main -->
+
+			<div class="et_pb_extra_column_sidebar">
+	<div id="search-7" class="et_pb_widget widget_search"><h4 class="widgettitle">Buscar</h4><form role="search" method="get" class="search-form" action="https://www.cienciaoberta.cat/">
+				<label>
+					<span class="screen-reader-text">Cerca:</span>
+					<input type="search" class="search-field" placeholder="Cerca &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Cerca" />
+			</form></div> <!-- end .et_pb_widget --><div id="block-4" class="et_pb_widget widget_block"><p><a href="https://cienciaoberta.aixeta.cat/ca/subscriptions">  <img decoding="async" src="https://cdn.filestackcontent.com/rjOmuUlQeqBx4ENj6qAO" width:="" 100%=""></a></p></div> <!-- end .et_pb_widget --><div id="block-3" class="et_pb_widget widget_block widget_text">
+<p><a href="https://cienciaoberta.aixeta.cat/ca"></a></p>
+</div> <!-- end .et_pb_widget --><div id="et_social_followers-2" class="et_pb_widget widget_et_social_followers"><h4 class="widgettitle">Segueix-nos</h4>
+		<div class="widget_content">
+			<ul class="widget_list">
+								<li>
+						<a class="et-extra-icon et-extra-icon-twitter et-extra-icon-background social-icon" href="https://twitter.com/cienciaoberta"></a>
+						<a href="https://twitter.com/cienciaoberta" class="widget_list_social">
+							<h3 class="title">Twitter</h3>
+													</a>
+					</li>
+										<li>
+						<a class="et-extra-icon et-extra-icon-instagram et-extra-icon-background social-icon" href="https://www.instagram.com/cienciaoberta/"></a>
+						<a href="https://www.instagram.com/cienciaoberta/" class="widget_list_social">
+							<h3 class="title">Instagram</h3>
+													</a>
+					</li>
+								</ul>
+		</div>
+		</div> <!-- end .et_pb_widget --><div id="bloomwidget-2" class="et_pb_widget widget_bloomwidget"><h4 class="widgettitle">El nostre butlletí setmanal</h4>
+				<div class='et_bloom_widget_content et_bloom_make_form_visible et_bloom_optin et_bloom_optin_4' style='display: none;'>
+					<style type="text/css">.et_bloom .et_bloom_optin_4 .et_bloom_form_content { background-color: #f5f5f5 !important; } .et_bloom .et_bloom_optin_4 .et_bloom_form_container .et_bloom_form_header { background-color: #ffffff !important; } .et_bloom .et_bloom_optin_4 .carrot_edge .et_bloom_form_content:before { border-top-color: #ffffff !important; } .et_bloom .et_bloom_optin_4 .carrot_edge.et_bloom_form_right .et_bloom_form_content:before, .et_bloom .et_bloom_optin_4 .carrot_edge.et_bloom_form_left .et_bloom_form_content:before { border-top-color: transparent !important; border-left-color: #ffffff !important; }
+						@media only screen and ( max-width: 767px ) {.et_bloom .et_bloom_optin_4 .carrot_edge.et_bloom_form_right .et_bloom_form_content:before { border-top-color: #ffffff !important; border-left-color: transparent !important; }.et_bloom .et_bloom_optin_4 .carrot_edge.et_bloom_form_left .et_bloom_form_content:after { border-bottom-color: #ffffff !important; border-left-color: transparent !important; }
+						}.et_bloom .et_bloom_optin_4 .et_bloom_form_container { background-color: #ffffff !important; } .et_bloom .et_bloom_optin_4 .et_bloom_form_content button { background-color: #3e5062 !important; } .et_bloom .et_bloom_optin_4 .et_bloom_form_content .et_bloom_fields i { color: #3e5062 !important; } .et_bloom .et_bloom_optin_4 .et_bloom_form_content .et_bloom_custom_field_radio i:before { background: #3e5062 !important; } .et_bloom .et_bloom_optin_4 .et_bloom_border_dashed .et_bloom_form_container_wrapper { border-color: #4251db !important } .et_bloom .et_bloom_optin_4 .et_bloom_form_content button { background-color: #3e5062 !important; } .et_bloom .et_bloom_optin_4 .et_bloom_form_container h2, .et_bloom .et_bloom_optin_4 .et_bloom_form_container h2 span, .et_bloom .et_bloom_optin_4 .et_bloom_form_container h2 strong { font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif; }.et_bloom .et_bloom_optin_4 .et_bloom_form_container p, .et_bloom .et_bloom_optin_4 .et_bloom_form_container p span, .et_bloom .et_bloom_optin_4 .et_bloom_form_container p strong, .et_bloom .et_bloom_optin_4 .et_bloom_form_container form input, .et_bloom .et_bloom_optin_4 .et_bloom_form_container form button span { font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif; } </style>
+					<div class='et_bloom_form_container with_edge carrot_edge et_bloom_border_dashed et_bloom_rounded et_bloom_form_text_dark'>
+						
+			<div class="et_bloom_form_container_wrapper clearfix et_bloom_with_custom_fields">
+				<div class="et_bloom_header_outer">
+					<div class="et_bloom_form_header et_bloom_header_text_dark">
+						<img width="610" height="610" src="https://www.cienciaoberta.cat/wp-content/uploads/2021/09/E-mail-2-610x610.png" class="et_bloom_hide_mobile et_bloom_image_swing et_bloom_image" alt="Subscripció" decoding="async" loading="lazy" srcset="https://www.cienciaoberta.cat/wp-content/uploads/2021/09/E-mail-2-610x610.png 610w, https://www.cienciaoberta.cat/wp-content/uploads/2021/09/E-mail-2-300x300.png 300w, https://www.cienciaoberta.cat/wp-content/uploads/2021/09/E-mail-2-1024x1024.png 1024w, https://www.cienciaoberta.cat/wp-content/uploads/2021/09/E-mail-2-150x150.png 150w, https://www.cienciaoberta.cat/wp-content/uploads/2021/09/E-mail-2-768x768.png 768w, https://www.cienciaoberta.cat/wp-content/uploads/2021/09/E-mail-2-440x440.png 440w, https://www.cienciaoberta.cat/wp-content/uploads/2021/09/E-mail-2.png 1080w" sizes="(max-width: 610px) 100vw, 610px" />
+						
+						
+					</div>
+				</div>
+				<div class="et_bloom_form_content et_bloom_3_fields et_bloom_bottom_stacked">
+					
+					
+					<form method="post" class="clearfix">
+						<div class="et_bloom_fields">
+							<p class="et_bloom_popup_input et_bloom_subscribe_name">
+								<input placeholder="Nom" maxlength="50">
+							</p>
+									<p class="et_bloom_popup_input et_bloom_subscribe_last">
+										<input placeholder="Cognom" maxlength="50">
+									</p>
+							<p class="et_bloom_popup_input et_bloom_subscribe_email">
+								<input placeholder="E-mail">
+							</p>
+							<p class="et_bloom_custom_field et_bloom_fullwidth_field"><span class="et_bloom_custom_field_options_wrapper" id="et_bloom_custom_field_optin_4_6" data-field_type="radio" data-id="6">
+							<span class="et_bloom_custom_field_options_title">Consentiment</span>
+							<span class="et_bloom_custom_field_options_list"><span class="et_bloom_custom_field_radio">
+								<input id="et_bloom_custom_field_optin_4_6_0" type="radio" name="et_bloom_custom_field_optin_4_6" value="He llegit i accepto la Política de Privacitat" data-id="0" data-required_mark="required"/>
+								<label for="et_bloom_custom_field_optin_4_6_0"><i></i>He llegit i accepto la Política de Privacitat</label>
+							</span></span>
+						</span></p>
+							<button data-optin_id="optin_4" data-service="mailchimp" data-list_id="9cf0c7a170" data-page_id="7329" data-account="Llista2022" data-ip_address="true" class="et_bloom_submit_subscription">
+								<span class="et_bloom_subscribe_loader"></span>
+								<span class="et_bloom_button_text et_bloom_button_text_color_light">Uneix-m&#039;hi</span>
+							</button>
+						</div>
+					</form>
+					<div class="et_bloom_success_container">
+						<span class="et_bloom_success_checkmark"></span>
+					</div>
+					<h2 class="et_bloom_success_message">T&#039;has unit correctament. Rebràs un e-mail ben aviat.</h2>
+					
+				</div>
+			</div>
+			<span class="et_bloom_close_button"></span>
+					</div>
+				</div></div> <!-- end .et_pb_widget --><div id="sow-accordion-2" class="et_pb_widget widget_sow-accordion"><div
+			
+			class="so-widget-sow-accordion so-widget-sow-accordion-default-9814b7affd00"
+			
+		><div>
+	<div class="sow-accordion">
+			<div class="sow-accordion-panel"
+			 data-anchor="privacitat-rgpd">
+				<div class="sow-accordion-panel-header-container" role="heading" aria-level="2">
+					<div class="sow-accordion-panel-header" tabindex="0" role="button" id="accordion-label-privacitat-rgpd" aria-controls="accordion-content-privacitat-rgpd" aria-expanded="false">
+						<div class="sow-accordion-title sow-accordion-title-icon-left">
+														PRIVACITAT (RGPD)													</div>
+						<div class="sow-accordion-open-close-button">
+							<div class="sow-accordion-open-button">
+								<span class="sow-icon-ionicons" data-sow-icon="&#xf218;"
+		 
+		aria-hidden="true"></span>							</div>
+							<div class="sow-accordion-close-button">
+								<span class="sow-icon-ionicons" data-sow-icon="&#xf209;"
+		 
+		aria-hidden="true"></span>							</div>
+						</div>
+					</div>
+				</div>
+
+			<div
+				class="sow-accordion-panel-content"
+				role="region"
+				aria-labelledby="accordion-label-privacitat-rgpd"
+				id="accordion-content-privacitat-rgpd"
+				style="display: none;"			>
+				<div class="sow-accordion-panel-border" tabindex="0">
+					<p style="text-align: center;">Quan omplis aquest formulari, estàs donant el teu consentiment <b>exprés</b> al tractament de les teves dades segons el <b>Reglament General de Protecció de Dades</b> (<b>RGPD</b>).</p>
+<p style="text-align: center;">Estàs informat que el <b>responsable</b> de protecció de dades és en Marc Canela, president de l’Associació de Divulgació Científica Ciència Oberta. La <b>finalitat</b> és enviar informació sobre nous continguts, sempre amb la <b>legitimació</b> del teu consentiment atorgat en el formulari. En qualsevol moment podràs exercir els teus <b>drets</b> de rectificació, accés, limitació o supressió de les teves dades. Per més informació pots donar una ullada a la <a href="https://www.cienciaoberta.cat/politica-de-privacitat/" target="_blank" rel="noopener"><b>Política de Privacitat</b></a>.</p>
+<p style="text-align: center;">El <b>destinatari</b> de les teves dades és MailChimp (una plataforma amb domicili als Estats Units). Quan et subscrius, estàs donant el teu consentiment per transmetre les teves dades a MailChimp per ser processades. Per més informació, pots consultar la seva <a href="https://mailchimp.com/legal/" target="_blank" rel="noopener"><b>Política de Privacitat</b></a>.</p>
+				</div>
+			</div>
+		</div>
+		</div>
+</div>
+</div></div> <!-- end .et_pb_widget -->		<div id="et-recent-posts-2" class="et_pb_widget widget_et_recent_entries">		<h4 class="widgettitle">Contingut recent</h4>		<ul class="widget_list">
+					<li>
+									<a href="https://www.cienciaoberta.cat/mengele/" title="Vaig ser assistent del doctor Mengele" class="widget_list_thumbnail">
+				<img src="https://www.cienciaoberta.cat/wp-content/uploads/2023/02/Portades-Ressenyes-948-×-640-px-150x150.png" alt="Vaig ser assistent del doctor Mengele" />
+			</a>								<div class="post_info">
+					<a href="https://www.cienciaoberta.cat/mengele/" class="title">Vaig ser assistent del doctor Mengele</a>
+										<div class="post-meta">
+						<span class="updated">febr. 22, 2023</span> | <a href="https://www.cienciaoberta.cat/ressenyes/" rel="tag">Ressenyes</a>					</div>
+				</div>
+			</li>
+					<li>
+									<a href="https://www.cienciaoberta.cat/climfluencers/" title="“Climfluencers”: Els boscos i el canvi climàtic" class="widget_list_thumbnail">
+				<img src="https://www.cienciaoberta.cat/wp-content/uploads/2023/02/pexels-photo-14187605-150x150.jpeg" alt="“Climfluencers”: Els boscos i el canvi climàtic" />
+			</a>								<div class="post_info">
+					<a href="https://www.cienciaoberta.cat/climfluencers/" class="title">“Climfluencers”: Els boscos i el canvi climàtic</a>
+										<div class="post-meta">
+						<span class="updated">febr. 19, 2023</span> | <a href="https://www.cienciaoberta.cat/reportatges/medi/" rel="tag">Medi ambient</a>					</div>
+				</div>
+			</li>
+					<li>
+									<a href="https://www.cienciaoberta.cat/beethoven/" title="Beethoven i el plom" class="widget_list_thumbnail">
+				<img src="https://www.cienciaoberta.cat/wp-content/uploads/2023/02/sheet-music-g99ea826d5_1280-150x150.jpg" alt="Beethoven i el plom" />
+			</a>								<div class="post_info">
+					<a href="https://www.cienciaoberta.cat/beethoven/" class="title">Beethoven i el plom</a>
+										<div class="post-meta">
+						<span class="updated">febr. 12, 2023</span> | <a href="https://www.cienciaoberta.cat/reportatges/bioquimica/" rel="tag">Bioquímica i salut</a>					</div>
+				</div>
+			</li>
+					<li>
+									<a href="https://www.cienciaoberta.cat/gallines/" title="Per què les gallines decapitades continuen corrent?" class="widget_list_thumbnail">
+				<img src="https://www.cienciaoberta.cat/wp-content/uploads/2023/02/Gallina-150x150.png" alt="Per què les gallines decapitades continuen corrent?" />
+			</a>								<div class="post_info">
+					<a href="https://www.cienciaoberta.cat/gallines/" class="title">Per què les gallines decapitades continuen corrent?</a>
+										<div class="post-meta">
+						<span class="updated">febr. 5, 2023</span> | <a href="https://www.cienciaoberta.cat/reportatges/bioquimica/" rel="tag">Bioquímica i salut</a>					</div>
+				</div>
+			</li>
+					<li>
+									<a href="https://www.cienciaoberta.cat/anticiencia/" title="Anticiència entre els científics: per què la gent creu coses falses?" class="widget_list_thumbnail">
+				<img src="https://www.cienciaoberta.cat/wp-content/uploads/2023/01/portada-150x150.png" alt="Anticiència entre els científics: per què la gent creu coses falses?" />
+			</a>								<div class="post_info">
+					<a href="https://www.cienciaoberta.cat/anticiencia/" class="title">Anticiència entre els científics: per què la gent creu coses falses?</a>
+										<div class="post-meta">
+						<span class="updated">gen. 29, 2023</span> | <a href="https://www.cienciaoberta.cat/reportatges/filosofia-historia/" rel="tag">Filosofia i història de la ciència</a>					</div>
+				</div>
+			</li>
+						</ul>
+		</div> <!-- end .et_pb_widget --></div>
+
+		</div> <!-- #content-area -->
+	</div> <!-- .container -->
+	</div> <!-- #main-content -->
+
+	
+	<footer id="footer" class="footer_columns_3">
+				<div id="footer-bottom">
+			<div class="container">
+
+				<!-- Footer Info -->			
+				<p id="footer-info">Aquesta web està subjecta a una llicència de <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/2.5/es/deed.ca">Reconeixement-NoComercial-SenseObraDerivada 2.5 Espanya de Creative Commons</a></p>
+
+				<!-- Footer Navigation -->
+								<div id="footer-nav">
+					<ul id="footer-menu" class="bottom-nav"><li id="menu-item-182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-182"><a href="https://www.cienciaoberta.cat/politica-de-privacitat/">Política de privacitat</a></li>
+<li id="menu-item-183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-183"><a href="https://www.cienciaoberta.cat/avis-legal/">Avís Legal</a></li>
+<li id="menu-item-185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185"><a href="https://www.cienciaoberta.cat/politica-de-cookies/">Política de cookies</a></li>
+</ul>						<ul class="et-extra-social-icons" style="">
+																																																																			<li class="et-extra-social-icon twitter">
+								<a href="https://twitter.com/cienciaoberta" class="et-extra-icon et-extra-icon-background-none et-extra-icon-twitter"></a>
+							</li>
+																																																																																																																																																																																<li class="et-extra-social-icon instagram">
+								<a href="https://www.instagram.com/cienciaoberta/" class="et-extra-icon et-extra-icon-background-none et-extra-icon-instagram"></a>
+							</li>
+																																																																																																																																																																																																																																																																																																																																																																																		</ul>
+									</div> <!-- /#et-footer-nav -->
+				
+			</div>
+		</div>
+	</footer>
+	</div> <!-- #page-container -->
+
+	
+	<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true"><span>Ciència Oberta fa servir cookies de tercers a efectes estadístics.<br />
+<a id="wt-cli-accept-all-btn" role='button' data-cli_action="accept_all" class="wt-cli-element medium cli-plugin-button wt-cli-accept-all-btn cookie_action_close_header cli_action_button">Acceptar</a> <a role='button' id="cookie_action_close_header_reject" class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header_reject cli_action_button wt-cli-reject-btn" data-cli_action="reject">Rebutjar</a><br />
+<a href="https://www.cienciaoberta.cat/politica-de-cookies/" id="CONSTANT_OPEN_URL" target="_blank" class="cli-plugin-main-link">Més informació</a></span></div><div id="cookie-law-info-again" data-nosnippet="true"><span id="cookie_hdr_showagain">Política de cookies</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+	<div class="cli-modal-content cli-bar-popup">
+		  <button type="button" class="cli-modal-close" id="cliModalClose">
+			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+			<span class="wt-cli-sr-only">Tanca</span>
+		  </button>
+		  <div class="cli-modal-body">
+			<div class="cli-container-fluid cli-tab-container">
+	<div class="cli-row">
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+			<div class="cli-privacy-overview">
+				<h4>Privacy Overview</h4>				<div class="cli-privacy-content">
+					<div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt-out of these cookies. But opting out of some of these cookies may have an effect on your browsing experience.</div>
+				</div>
+				<a class="cli-privacy-readmore" aria-label="Mostra'n més" role="button" data-readmore-text="Mostra'n més" data-readless-text="Mostra'n menys"></a>			</div>
+		</div>
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+												<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+								Necessary							</a>
+															<div class="wt-cli-necessary-checkbox">
+									<input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked"  />
+									<label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
+								</div>
+								<span class="cli-necessary-caption">Sempre activat</span>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="necessary">
+								<div class="wt-cli-cookie-description">
+									Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information.								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="non-necessary" data-toggle="cli-toggle-tab">
+								Non-necessary							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-non-necessary" class="cli-user-preference-checkbox"  data-id="checkbox-non-necessary" checked='checked' />
+									<label for="wt-cli-checkbox-non-necessary" class="cli-slider" data-cli-enable="Habilitat" data-cli-disable="Desactivat"><span class="wt-cli-sr-only">Non-necessary</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="non-necessary">
+								<div class="wt-cli-cookie-description">
+									Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website.								</div>
+							</div>
+						</div>
+					</div>
+										</div>
+	</div>
+</div>
+		  </div>
+		  <div class="cli-modal-footer">
+			<div class="wt-cli-element cli-container-fluid cli-tab-container">
+				<div class="cli-row">
+					<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+						
+															<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">DESA I ACCEPTA</a>
+													</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all--><div class="et_bloom_popup et_bloom_optin et_bloom_resize et_bloom_optin_6 et_bloom_trigger_click" data-trigger_click="a#popup">
+							<div class="et_bloom_form_container et_bloom_popup_container et_bloom_form_bottom with_edge breakout_edge et_bloom_with_border et_bloom_border_dashed et_bloom_border_position_full et_bloom_rounded_corners et_bloom_rounded et_bloom_form_text_dark et_bloom_animation_fadein">
+								
+			<div class="et_bloom_form_container_wrapper clearfix et_bloom_with_custom_fields">
+				<div class="et_bloom_header_outer">
+					<div class="et_bloom_form_header et_bloom_header_text_dark">
+						
+						<div class="et_bloom_form_text">
+						<h2 style="text-align: center;">Uneix-te al butlletí setmanal</h2>
+					</div>
+						
+					</div>
+				</div>
+				<div class="et_bloom_form_content et_bloom_3_fields et_bloom_bottom_inline">
+					
+					
+					<form method="post" class="clearfix">
+						<div class="et_bloom_fields">
+							<p class="et_bloom_popup_input et_bloom_subscribe_name">
+								<input placeholder="Nom" maxlength="50">
+							</p>
+									<p class="et_bloom_popup_input et_bloom_subscribe_last">
+										<input placeholder="Cognom" maxlength="50">
+									</p>
+							<p class="et_bloom_popup_input et_bloom_subscribe_email">
+								<input placeholder="E-mail">
+							</p>
+							<p class="et_bloom_custom_field et_bloom_fullwidth_field"><span class="et_bloom_custom_field_options_wrapper" id="et_bloom_custom_field_optin_6_6" data-field_type="radio" data-id="6">
+							<span class="et_bloom_custom_field_options_title">Consentiment</span>
+							<span class="et_bloom_custom_field_options_list"><span class="et_bloom_custom_field_radio">
+								<input id="et_bloom_custom_field_optin_6_6_0" type="radio" name="et_bloom_custom_field_optin_6_6" value="He llegit i accepto la Política de Privacitat" data-id="0" data-required_mark="required"/>
+								<label for="et_bloom_custom_field_optin_6_6_0"><i></i>He llegit i accepto la Política de Privacitat</label>
+							</span></span>
+						</span></p>
+							<button data-optin_id="optin_6" data-service="mailchimp" data-list_id="9cf0c7a170" data-page_id="7329" data-account="Llista2022" data-ip_address="true" class="et_bloom_submit_subscription">
+								<span class="et_bloom_subscribe_loader"></span>
+								<span class="et_bloom_button_text et_bloom_button_text_color_dark">Uneix-m&#039;hi</span>
+							</button>
+						</div>
+					</form>
+					<div class="et_bloom_success_container">
+						<span class="et_bloom_success_checkmark"></span>
+					</div>
+					<h2 class="et_bloom_success_message">Enhorabona! T&#039;hi has unit correctament. Ben aviat rebràs un e-mail.</h2>
+					<div class="et_bloom_form_footer"><p>Quan omplis aquest formulari, estàs donant el teu consentiment exprés al tractament de les teves dades segons el Reglament General de Protecció de Dades (RGPD).</p>
+<p> </p>
+<p>Estàs informat que el responsable del blog és en Marc Canela, director del projecte. La finalitat és enviar informació sobre nous reportatges i articles, sempre amb la legitimació del teu consentiment atorgat en el formulari. En qualsevol moment podràs exercir els teus drets de rectificació, accés, limitació o supressió de les teves dades. Per més informació pots donar una ullada a la <a href="../politica-de-privacitat/" target="_blank">Política de Privacitat</a>.</p>
+<p> </p>
+<p>El destinatari de les teves dades és MailChimp (una plataforma amb domicili als Estats Units). Quan et subscrius, estàs donant el teu consentiment per transmetre les teves dades a MailChimp per ser processades. Per més informació, pots consultar la seva <a href="https://mailchimp.com/legal/" target="_blank">Política de Privacitat</a>.</p></div>
+				</div>
+			</div>
+			<span class="et_bloom_close_button"></span>
+							</div>
+						</div>		<script type="application/javascript">
+			(function() {
+				var file     = ["https:\/\/www.cienciaoberta.cat\/wp-content\/et-cache\/7329\/et-extra-dynamic-7329-late.css"];
+				var handle   = document.getElementById('extra-style-parent-css');
+				var location = handle.parentNode;
+
+				if (0===document.querySelectorAll('link[href="' + file + '"]').length) {
+					var link  = document.createElement('link');
+					link.rel  = 'stylesheet';
+					link.id   = 'et-dynamic-late-css';
+					link.href = file;
+
+					location.insertBefore(link, handle.nextSibling);
+				}
+			})();
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138352873-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138352873-1');
+</script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e817847e2d99de4f15b718158/798004c10481691664a2dfa31.js");</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EKRYBZ1J0H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EKRYBZ1J0H');
+</script><link rel='stylesheet' id='et-gf-raleway-css' href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900&#038;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='et-gf-open-sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700&#038;ver=1.3.12' type='text/css' media='all' />
+<link rel='stylesheet' id='et_bloom-css-css' href='https://www.cienciaoberta.cat/wp-content/plugins/bloom/css/style.css?ver=1.3.12' type='text/css' media='all' />
+<link rel='stylesheet' id='siteorigin-widget-icon-font-ionicons-css' href='https://www.cienciaoberta.cat/wp-content/plugins/so-widgets-bundle/icons/ionicons/style.css?ver=6.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/plugins/worth-the-read/js/wtr.js?ver=6.1.1' id='wtr-js-js'></script>
+<script type='text/javascript' id='ppress-frontend-script-js-extra'>
+/* <![CDATA[ */
+var pp_ajax_form = {"ajaxurl":"https:\/\/www.cienciaoberta.cat\/wp-admin\/admin-ajax.php","confirm_delete":"Are you sure?","deleting_text":"Deleting...","deleting_error":"An error occurred. Please try again.","nonce":"286e9d1111","disable_ajax_form":"false","is_checkout":"0","is_checkout_tax_enabled":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=4.7.0' id='ppress-frontend-script-js'></script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+<script type='text/javascript' id='extra-scripts-js-extra'>
+/* <![CDATA[ */
+var EXTRA = {"images_uri":"https:\/\/www.cienciaoberta.cat\/wp-content\/themes\/Extra\/images\/","ajaxurl":"https:\/\/www.cienciaoberta.cat\/wp-admin\/admin-ajax.php","your_rating":"La teva qualificaci\u00f3:","item_in_cart_count":"%d Item in Cart","items_in_cart_count":"%d Items in Cart","item_count":"%d Item","items_count":" %d art\u00edculos","rating_nonce":"4a64e5a378","timeline_nonce":"304f7ba199","blog_feed_nonce":"31d484fc6d","error":"Hubo un problema, por favor intente de nuevo.","contact_error_name_required":"El campo de nombre no puede estar vac\u00edo.","contact_error_email_required":"El camp de l'e-mail no pot estar buit.","contact_error_email_invalid":"Si us plau, introdueix una adre\u00e7a d'e-mail v\u00e0lida.","is_ab_testing_active":"","is_cache_plugin_active":"no"};
+var et_builder_utils_params = {"condition":{"diviTheme":false,"extraTheme":true},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.cienciaoberta.cat\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.cienciaoberta.cat\/wp-content\/themes\/Extra\/images","builder_images_uri":"https:\/\/www.cienciaoberta.cat\/wp-content\/themes\/Extra\/includes\/builder\/images","et_frontend_nonce":"432836896c","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"ca37ed957a","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"7329","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.cienciaoberta.cat\/wp-content\/themes\/Extra\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#3e5062","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/themes/Extra/scripts/scripts.min.js?ver=4.20.0' id='extra-scripts-js'></script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-includes/js/comment-reply.min.js?ver=6.1.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/themes/Extra/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.20.0' id='fitvids-js'></script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/themes/Extra/core/admin/js/common.js?ver=4.20.0' id='et-core-common-js'></script>
+<script defer type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1670065803' id='akismet-frontend-js'></script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/plugins/bloom/js/jquery.uniform.min.js?ver=1.3.12' id='et_bloom-uniform-js-js'></script>
+<script type='text/javascript' id='et_bloom-custom-js-js-extra'>
+/* <![CDATA[ */
+var bloomSettings = {"ajaxurl":"https:\/\/www.cienciaoberta.cat\/wp-admin\/admin-ajax.php","pageurl":"https:\/\/www.cienciaoberta.cat\/monty\/","stats_nonce":"0d8bd29a62","subscribe_nonce":"92141c983f","is_user_logged_in":"not_logged"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/plugins/bloom/js/custom.js?ver=1.3.12' id='et_bloom-custom-js-js'></script>
+<script type='text/javascript' src='https://www.cienciaoberta.cat/wp-content/plugins/bloom/js/idle-timer.min.js?ver=1.3.12' id='et_bloom-idle-timer-js-js'></script>
+</body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced 
+Content Delivery Network via N/A
+Database Caching 26/195 queries in 0.651 seconds using disk (Request-wide modification query)
+
+Served from: www.cienciaoberta.cat @ 2023-02-24 11:18:10 by W3 Total Cache
+-->

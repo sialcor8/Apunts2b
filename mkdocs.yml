@@ -1,0 +1,32 @@
+site_name: Apunts_Unitat
+docs_dir: 'md'
+site_dir: 'docs'
+
+theme: readthedocs
+markdown_extensions:
+  - admonition
+
+extra_css: 
+    - css/extra.css
+    - css/second_extra.css
+
+
+
+nav:
+    - Home: index.md  
+    - Unitat 1:
+      - Successos: unitat 1/apartat1.md
+      - Àlgebra de Boole: unitat 1/apartat2.md
+      - Espai probabilístic: unitat 1/apartat3.md
+      - Càlcul de probabilitats: unitat 1/apartat4.md
+      - Probabilitat condicionada: unitat 1/apartat5.md
+      - Teoremes: unitat 1/apartat6.md 
+    - Curiositats: curiositats.md
+    - Altres webs d'interés: webs.md
+    - Llibres de consulta: llibres.md
+    - Pel·lícules i documentals realacionats amb la probabilitat: movies.md 
+    - Web del projecte: projecteprob.md
+    - Altres recursos didàctics: recursosdidàctics.md
+    - Llicència: llicència.md
+
+
